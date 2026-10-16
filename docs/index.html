@@ -182,7 +182,7 @@
 				},
 
 				get sortedItems() {
-					return this.items
+					return [...this.items]
 						.filter(item => item.minPrice > 0)
 						.sort((a, b) => a.name.localeCompare(b.name));
 				},
