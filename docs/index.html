@@ -122,32 +122,26 @@
 
 				<div class="bg-[#f9fbf8] border border-atlas-line p-4 rounded-lg mt-4" id="shulker-panel">
 					<div class="mb-4" v-show="service === 'depot'">
-						<label
-							class="flex items-center gap-2 text-[13px] font-semibold text-atlas-muted cursor-pointer">
-							<input type="checkbox" v-model="useShulkers" class="accent-atlas-green"> Emballer dans des
-							Shulkers louées
+						<label class="flex items-center gap-2 text-[13px] font-semibold text-atlas-muted cursor-pointer">
+							<input type="checkbox" v-model="useShulkers" class="accent-atlas-green">
+							Emballer dans des Shulkers louées
 						</label>
 					</div>
 
 					<div class="mb-4">
-						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Durée de location
-							(mois)</label>
+						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Durée de location (mois)</label>
 						<input type="number" v-model.number="months" min="1"
 							class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
 					</div>
 
 					<div class="mb-4">
-						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Shulkers estimées
-							(auto)</label>
-						<input type="number" :value="shulkerEst" disabled
-							class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] bg-[#eef1ec]">
+						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Shulkers estimées (auto)</label>
+						<input type="number" :value="shulkerEst" disabled class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] bg-[#eef1ec]">
 					</div>
 
 					<div class="mb-4">
-						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Forcer le nombre de
-							Shulkers (laisser vide pour auto)</label>
-						<input type="number" v-model.number="shulkerForce" placeholder="Auto" min="0"
-							class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
+						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Forcer le nombre de Shulkers (laisser vide pour auto)</label>
+						<input type="number" v-model.number="shulkerForce" placeholder="Auto" min="0" class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
 					</div>
 				</div>
 			</div>
