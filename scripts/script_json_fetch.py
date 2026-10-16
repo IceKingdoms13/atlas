@@ -26,22 +26,25 @@ def main():
     # Nettoyage : retirer les lignes où le nom de l'item est vide
     df = df.dropna(subset=[col_nom])
     
-    print("2. Récupération des données de stack depuis l'API Minecraft...")
+    print("2. Récupération des données depuis l'API Minecraft...")
     # URL contenant les données brutes des items (Minecraft 1.20)
     api_url = "https://raw.githubusercontent.com/PrismarineJS/minecraft-data/master/data/pc/1.20/items.json"
-    stack_sizes = {}
+    item_info_map = {}
     
     try:
         response = requests.get(api_url)
         response.raise_for_status()
         items_api_data = response.json()
         
-        # Création d'un dictionnaire pour associer le nom de l'item (en minuscules) à sa taille de stack max
+        # Création d'un dictionnaire pour associer le nom de l'item (en minuscules) à ses infos (stackSize et id)
         for item in items_api_data:
             nom_api_minuscule = item.get('displayName', '').lower()
-            stack_sizes[nom_api_minuscule] = item.get('stackSize', 64)
+            item_info_map[nom_api_minuscule] = {
+                'stackSize': item.get('stackSize', 64),
+                'id': item.get('name', '')
+            }
     except Exception as e:
-        print(f"⚠️ Avertissement : Impossible de récupérer les tailles de stack ({e}). La valeur par défaut (64) sera appliquée.")
+        print(f"⚠️ Avertissement : Impossible de récupérer les données ({e}). Les valeurs par défaut seront appliquées.")
     
     print("3. Croisement des données et formatage...")
     result_data = []
@@ -58,11 +61,14 @@ def main():
         if pd.isna(prix_min) or not isinstance(prix_min, (int, float)):
             prix_min = 0.0
             
-        # Chercher le max stack (on passe par défaut à 64 si l'item a un nom modifié ou n'est pas trouvé)
-        max_stack = stack_sizes.get(item_name.lower(), 64)
+        # Chercher les informations de l'item (par défaut si non trouvé)
+        item_info = item_info_map.get(item_name.lower(), {'stackSize': 64, 'id': ''})
+        max_stack = item_info['stackSize']
+        item_id = item_info['id']
         
         item_data = {
             "name": item_name,
+            "id": item_id,
             "minPrice": round(float(prix_min), 2),
             "max_stack": max_stack
         }
