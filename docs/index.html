@@ -194,7 +194,7 @@
 		function calculateTotals() {
 			const service = document.querySelector('input[name="service"]:checked').value;
 			const useShulkers = document.getElementById('use-shulkers').checked;
-			const months = parseInt(document.getElementById('months').value) || 1;
+			const months = Math.max(1, parseInt(document.getElementById('months').value) || 1);
 			const shulkerForce = document.getElementById('shulker-force').value;
 
 			let totalMat = 0;
@@ -217,10 +217,16 @@
 				}
 			});
 
-			let shulkerEst = 0;
-			if(service === 'livraison' || (service === 'depot' && useShulkers)) {
-				shulkerEst = totalSlots > 0 ? Math.ceil(totalSlots / 27) : 0;
+			let needsShulkers = false;
+			if (service === 'livraison') {
+				needsShulkers = true;
+			} else if (service === 'depot') {
+				needsShulkers = useShulkers;
+			} else {
+				needsShulkers = false;
 			}
+
+			let shulkerEst = (needsShulkers && totalSlots > 0) ? Math.ceil(totalSlots / 27) : 0;
 			document.getElementById('shulker-est').value = shulkerEst;
 
 			let finalShulkers = shulkerEst;
@@ -228,9 +234,15 @@
 				finalShulkers = Math.max(0, parseInt(shulkerForce));
 			}
 
-			const sumDel = service === 'livraison' ? 15.00 : 0;
-			const sumRent = finalShulkers * 20.00 * Math.max(1, months);
-			const sumDep = finalShulkers * 55.00;
+			let sumDel = service === 'livraison' ? 15.00 : 0;
+			let sumRent = finalShulkers * 20.00 * months;
+			let sumDep = finalShulkers * 55.00;
+
+			if (service === 'location') {
+				totalMat = 0;
+				sumDel = 0;
+			}
+
 			const subtotal = totalMat + sumDel + sumRent;
 			const sumTax = subtotal * 0.087;
 			const total = subtotal + sumTax + sumDep;
@@ -246,10 +258,42 @@
 		function copyDevis() {
 			const client = document.getElementById('client').value || 'Non renseigné';
 			const project = document.getElementById('project').value || 'Non renseigné';
-			const totalFinal = document.getElementById('total-final').textContent;
+			
+			const totalMat = document.getElementById('total-mat').textContent;
+			const sumDel = document.getElementById('sum-del').textContent;
+			const sumRent = document.getElementById('sum-rent').textContent;
+			const sumTax = document.getElementById('sum-tax').textContent;
+			const sumDep = document.getElementById('sum-dep').textContent;
+			const total = document.getElementById('total-final').textContent;
 
-			let text = `*** Devis Atlas Extraction ***\n\nClient : ${client}\nProjet : ${project}\n\nTotal estimé : ${totalFinal}`;
-			navigator.clipboard.writeText(text).then(() => alert('Devis copié dans le presse-papier !'));
+			let itemsText = "";
+			document.querySelectorAll('.row-item').forEach(row => {
+				const selectVal = row.querySelector('.item-select').value;
+				const qtyVal = row.querySelector('.item-qty').value;
+				if (selectVal) {
+					itemsText += `- ${qtyVal}x ${selectVal}\n`;
+				}
+			});
+
+			let text = `*** Devis Atlas Extraction ***\n\n` +
+				`Client : ${client}\n` +
+				`Projet : ${project}\n\n` +
+				`Ressources demandées :\n` +
+				`${itemsText || 'Aucune (Location seule)'}\n\n` +
+				`Résumé financier :\n` +
+				`Matériaux (HT) : ${totalMat}\n` +
+				`Frais de Livraison : ${sumDel}\n` +
+				`Location : ${sumRent}\n` +
+				`Taxes : ${sumTax}\n` +
+				`Caution : ${sumDep}\n\n` +
+				`Total estimé (TTC + Caution) : ${total}\n` +
+				`Dont ${sumDep} restituable`;
+
+			navigator.clipboard.writeText(text).then(() => {
+				alert('Le devis a bien été copié dans le presse-papier !');
+			}).catch(() => {
+				alert('Erreur lors de la copie.');
+			});
 		}
 
 		window.addEventListener('DOMContentLoaded', init);
