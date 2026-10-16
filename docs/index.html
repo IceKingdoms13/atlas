@@ -154,7 +154,7 @@
 
 	<script>
 		function app() {
-			return {
+			const self = {
 				client: '',
 				project: '',
 				note: '',
@@ -165,7 +165,7 @@
 				items: [],
 				rows: [],
 
-				async init() {
+				async loadItems() {
 					try {
 						const response = await fetch('./economie_items.json');
 						if (!response.ok) throw new Error('Erreur réseau');
@@ -174,7 +174,9 @@
 						console.error(error);
 						alert('Impossible de charger le catalogue de matériaux.');
 					} finally {
-						this.addRow();
+						if (this.rows.length === 0) {
+							this.addRow();
+						}
 					}
 				},
 
@@ -260,7 +262,7 @@
 				},
 
 				get sumDep() {
-					return this.finalShulkers * 555.00;
+					return this.finalShulkers * 55.00;
 				},
 
 				get subtotal() {
@@ -308,7 +310,11 @@
 						alert('Erreur lors de la copie.');
 					});
 				}
-			}
+			};
+
+			// Automatically fire the fetch call on instantiation
+			self.loadItems();
+			return self;
 		}
 	</script>
 </body>
