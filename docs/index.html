@@ -141,169 +141,176 @@ header { background: linear-gradient(115deg, var(--green), #4d9e42); color: #fff
 
 <script>
 
+let items = [];
 const itemsMap = new Map();
 
+async function loadItems() {
+	try {
+		const response = await fetch('/economie_items.json');
+		if (!response.ok) throw new Error('Erreur réseau');
+		items = await response.json();
+		initDatalist();
+		addRow();
+	} catch (error) {
+		console.error(error);
+		alert('Impossible de charger le catalogue de matériaux.');
+	}
+}
+
 function initDatalist() {
-  const datalist = document.getElementById('items-list');
-  
-  // Filtrage : exclusion stricte des prix <= 0
-  const validItems = items.filter(item => item.minPrice > 0);
-  const sorted = validItems.sort((a, b) => a.name.localeCompare(b.name));
-  
-  sorted.forEach(item => {
-    itemsMap.set(item.name.toLowerCase(), item);
-    const opt = document.createElement('option');
-    opt.value = item.name;
-    opt.label = `${item.minPrice} €`;
-    datalist.appendChild(opt);
-  });
+	const datalist = document.getElementById('items-list');
+	
+	// Filtrage : exclusion stricte des prix <= 0
+	const validItems = items.filter(item => item.minPrice > 0);
+	const sorted = validItems.sort((a, b) => a.name.localeCompare(b.name));
+	
+	sorted.forEach(item => {
+		itemsMap.set(item.name.toLowerCase(), item);
+		const opt = document.createElement('option');
+		opt.value = item.name;
+		opt.label = `${item.minPrice} €`;
+		datalist.appendChild(opt);
+	});
 }
 
 function addRow() {
-  const container = document.getElementById('rows-container');
-  const row = document.createElement('div');
-  row.className = 'row';
-  
-  row.innerHTML = `
-    <input type="text" list="items-list" class="item-search" placeholder="Chercher un matériau..." oninput="updateCalc()">
-    <input type="number" min="1" value="1" placeholder="Qté" oninput="updateCalc()">
-    <input type="text" placeholder="Prix" disabled style="background:#eef1ec;">
-    <button class="btn-del" onclick="this.parentElement.remove(); updateCalc()">X</button>
-  `;
-  container.appendChild(row);
-  updateCalc();
+	const container = document.getElementById('rows-container');
+	const row = document.createElement('div');
+	row.className = 'row';
+	
+	row.innerHTML = `
+		<input type="text" list="items-list" class="item-search" placeholder="Chercher un matériau..." oninput="updateCalc()">
+		<input type="number" min="1" value="1" placeholder="Qté" oninput="updateCalc()">
+		<input type="text" placeholder="Prix" disabled style="background:#eef1ec;">
+		<button class="btn-del" onclick="this.parentElement.remove(); updateCalc()">X</button>
+	`;
+	container.appendChild(row);
+	updateCalc();
 }
 
 function updateCalc() {
-  let totalMat = 0;
-  let totalQty = 0;
-  let totalSlots = 0; // NOUVEAU : On initialise le compteur de slots
-  
-  document.querySelectorAll('.row').forEach(row => {
-    const inputSearch = row.querySelector('.item-search');
-    const qtyInput = row.querySelector('input[type="number"]');
-    const priceInput = row.querySelectorAll('input')[2];
-    
-    const val = inputSearch.value.trim().toLowerCase();
-    const item = itemsMap.get(val);
-    
-    if (item) {
-      const price = item.minPrice || 0;
-      const qty = parseInt(qtyInput.value) || 0;
-      const maxStack = item.max_stack || 64; // On récupère la taille du stack (par défaut 64)
-      
-      const rowTotal = price * qty;
-      priceInput.value = rowTotal.toFixed(2) + ' €';
-      totalMat += rowTotal;
-      totalQty += qty;
-      
-      // NOUVEAU : On calcule les slots nécessaires pour cet item précis
-      totalSlots += Math.ceil(qty / maxStack);
-    } else {
-      priceInput.value = '';
-    }
-  });
+	let totalMat = 0;
+	let totalQty = 0;
+	let totalSlots = 0;
+	
+	document.querySelectorAll('.row').forEach(row => {
+		const inputSearch = row.querySelector('.item-search');
+		const qtyInput = row.querySelector('input[type="number"]');
+		const priceInput = row.querySelectorAll('input')[2];
+		
+		const val = inputSearch.value.trim().toLowerCase();
+		const item = itemsMap.get(val);
+		
+		if (item) {
+			const price = item.minPrice || 0;
+			const qty = parseInt(qtyInput.value) || 0;
+			const maxStack = item.max_stack || 64;
+			
+			const rowTotal = price * qty;
+			priceInput.value = rowTotal.toFixed(2) + ' €';
+			totalMat += rowTotal;
+			totalQty += qty;
+			
+			totalSlots += Math.ceil(qty / maxStack);
+		} else {
+			priceInput.value = '';
+		}
+	});
 
-  const service = document.querySelector('input[name="service"]:checked').value;
-  const months = Math.max(1, parseInt(document.getElementById('months').value) || 1);
-  const useShulkers = document.getElementById('use-shulkers').checked;
-  const forcedInput = document.getElementById('shulker-force').value.trim();
-  
-  const optDepot = document.getElementById('opt-shulker-depot');
-  let needsShulkers = false;
-  
-  if (service === 'livraison') {
-    optDepot.style.display = 'none';
-    needsShulkers = true;
-  } else if (service === 'depot') {
-    optDepot.style.display = 'block';
-    needsShulkers = useShulkers;
-  } else {
-    optDepot.style.display = 'none';
-    needsShulkers = false;
-  }
+	const service = document.querySelector('input[name="service"]:checked').value;
+	const months = Math.max(1, parseInt(document.getElementById('months').value) || 1);
+	const useShulkers = document.getElementById('use-shulkers').checked;
+	const forcedInput = document.getElementById('shulker-force').value.trim();
+	
+	const optDepot = document.getElementById('opt-shulker-depot');
+	let needsShulkers = false;
+	
+	if (service === 'livraison') {
+		optDepot.style.display = 'none';
+		needsShulkers = true;
+	} else if (service === 'depot') {
+		optDepot.style.display = 'block';
+		needsShulkers = useShulkers;
+	} else {
+		optDepot.style.display = 'none';
+		needsShulkers = false;
+	}
 
-  // MODIFIÉ : On calcule les shulkers à partir du total des slots (27 slots par shulker)
-  let shulkerEst = (needsShulkers && totalSlots > 0) ? Math.ceil(totalSlots / 27) : 0;
-  document.getElementById('shulker-est').value = shulkerEst;
-  
-  let finalShulkers = 0;
-  if (forcedInput !== "") {
-    finalShulkers = Math.max(0, parseInt(forcedInput) || 0);
-  } else {
-    finalShulkers = shulkerEst;
-  }
-  
-  let sumDel = service === 'livraison' ? 15.00 : 0;
-  let sumRent = finalShulkers * 20.00 * months;
-  let sumDep = finalShulkers * 555.00;
-  
-  if (service === 'location') {
-    totalMat = 0;
-    sumDel = 0;
-  }
-  
-  let subtotal = totalMat + sumDel + sumRent;
-  let sumTax = subtotal * 0.087;
-  let total = subtotal + sumTax + sumDep;
+	let shulkerEst = (needsShulkers && totalSlots > 0) ? Math.ceil(totalSlots / 27) : 0;
+	document.getElementById('shulker-est').value = shulkerEst;
+	
+	let finalShulkers = 0;
+	if (forcedInput !== "") {
+		finalShulkers = Math.max(0, parseInt(forcedInput) || 0);
+	} else {
+		finalShulkers = shulkerEst;
+	}
+	
+	let sumDel = service === 'livraison' ? 15.00 : 0;
+	let sumRent = finalShulkers * 20.00 * months;
+	let sumDep = finalShulkers * 555.00;
+	
+	if (service === 'location') {
+		totalMat = 0;
+		sumDel = 0;
+	}
+	
+	let subtotal = totalMat + sumDel + sumRent;
+	let sumTax = subtotal * 0.087;
+	let total = subtotal + sumTax + sumDep;
 
-  document.getElementById('sum-mat').innerText = totalMat.toFixed(2) + ' €';
-  document.getElementById('sum-del').innerText = sumDel.toFixed(2) + ' €';
-  document.getElementById('sum-rent').innerText = sumRent.toFixed(2) + ' €';
-  document.getElementById('sum-tax').innerText = sumTax.toFixed(2) + ' €';
-  document.getElementById('sum-dep').innerText = sumDep.toFixed(2) + ' €';
-  document.getElementById('sum-total').innerText = total.toFixed(2) + ' €';
-  document.getElementById('sum-dep-ret').innerText = sumDep.toFixed(2);
+	document.getElementById('sum-mat').innerText = totalMat.toFixed(2) + ' €';
+	document.getElementById('sum-del').innerText = sumDel.toFixed(2) + ' €';
+	document.getElementById('sum-rent').innerText = sumRent.toFixed(2) + ' €';
+	document.getElementById('sum-tax').innerText = sumTax.toFixed(2) + ' €';
+	document.getElementById('sum-dep').innerText = sumDep.toFixed(2) + ' €';
+	document.getElementById('sum-total').innerText = total.toFixed(2) + ' €';
+	document.getElementById('sum-dep-ret').innerText = sumDep.toFixed(2);
 }
 
 function copyRequest() {
-  const client = document.getElementById('client').value || 'Non renseigné';
-  const project = document.getElementById('project').value || 'Non renseigné';
-  const totalMat = document.getElementById('sum-mat').innerText;
-  const sumDel = document.getElementById('sum-del').innerText;
-  const sumRent = document.getElementById('sum-rent').innerText;
-  const sumTax = document.getElementById('sum-tax').innerText;
-  const sumDep = document.getElementById('sum-dep').innerText;
-  const total = document.getElementById('sum-total').innerText;
-  
-  console.log(sumRent);
-  
-  let itemsText = "";
-  document.querySelectorAll('.row').forEach(row => {
-    const val = row.querySelector('.item-search').value.trim();
-    const qty = row.querySelector('input[type="number"]').value;
-    if (val) {
-      itemsText += `- ${qty}x ${val}\n`;
-    }
-  });
+	const client = document.getElementById('client').value || 'Non renseigné';
+	const project = document.getElementById('project').value || 'Non renseigné';
+	const totalMat = document.getElementById('sum-mat').innerText;
+	const sumDel = document.getElementById('sum-del').innerText;
+	const sumRent = document.getElementById('sum-rent').innerText;
+	const sumTax = document.getElementById('sum-tax').innerText;
+	const sumDep = document.getElementById('sum-dep').innerText;
+	const total = document.getElementById('sum-total').innerText;
+	
+	let itemsText = "";
+	document.querySelectorAll('.row').forEach(row => {
+		const val = row.querySelector('.item-search').value.trim();
+		const qty = row.querySelector('input[type="number"]').value;
+		if (val) {
+			itemsText += `- ${qty}x ${val}\n`;
+		}
+	});
 
-  let text = 
-  `*** Devis Atlas Extraction ***\n\n
-  Client : ${client}\n
-  Projet : ${project}\n\n
-  Ressources demandées :\n
-  ${itemsText || 'Aucune (Location seule)'}\n\n
-  Résumé financier :\n
-  Matériaux (HT) : ${totalMat}
-  Frais de Livraison : ${sumDel}
-  Location : ${sumRent}
-  Taxes : ${sumTax}
-  Caution : ${sumDep}\n\n
-  Total estimé (TTC + Caution) : ${total}
-  Dont ${sumDep} restituable`;
+	let text = 
+	`*** Devis Atlas Extraction ***\n\n` +
+	`Client : ${client}\n` +
+	`Projet : ${project}\n\n` +
+	`Ressources demandées :\n` +
+	`${itemsText || 'Aucune (Location seule)'}\n\n` +
+	`Résumé financier :\n` +
+	`Matériaux (HT) : ${totalMat}\n` +
+	`Frais de Livraison : ${sumDel}\n` +
+	`Location : ${sumRent}\n` +
+	`Taxes : ${sumTax}\n` +
+	`Caution : ${sumDep}\n\n` +
+	`Total estimé (TTC + Caution) : ${total}\n` +
+	`Dont ${sumDep} restituable`;
 
-  console.log(text); 
-
-  navigator.clipboard.writeText(text).then(() => {
-    alert('Le devis a bien été copié dans le presse-papier !');
-  }).catch(() => {
-    alert('Erreur lors de la copie.');
-  });
+	navigator.clipboard.writeText(text).then(() => {
+		alert('Le devis a bien été copié dans le presse-papier !');
+	}).catch(() => {
+		alert('Erreur lors de la copie.');
+	});
 }
 
 window.onload = () => {
-  initDatalist();
-  addRow();
+	loadItems();
 };
 </script>
 </body>
