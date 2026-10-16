@@ -73,7 +73,15 @@
 			</div>
 
 			<div class="bg-white dark:bg-zinc-900 rounded-2xl p-6 shadow-atlas dark:shadow-none dark:border dark:border-zinc-800 mb-6 transition-colors">
-				<h2 class="mt-0 text-[18px] border-b-2 border-atlas-line dark:border-zinc-800 pb-3 mb-5 text-atlas-green dark:text-atlas-light">Matériaux & Ressources</h2>
+				<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-2 border-atlas-line dark:border-zinc-800 pb-3 mb-5 gap-3">
+					<h2 class="mt-0 mb-0 text-[18px] text-atlas-green dark:text-atlas-light">Matériaux & Ressources</h2>
+					<div class="flex items-center gap-2">
+						<label for="litematica-file-input" class="bg-atlas-bg dark:bg-zinc-800 dark:text-atlas-light text-atlas-ink border border-atlas-line dark:border-zinc-700 px-3 py-1.5 rounded-lg cursor-pointer font-semibold text-[13px] hover:border-atlas-green transition inline-block">
+							📁 Importer Litematica JSON
+						</label>
+						<input type="file" id="litematica-file-input" accept=".json" class="hidden">
+					</div>
+				</div>
 				<div id="rows-container"></div>
 				<button id="add-row-btn" class="bg-atlas-light dark:bg-zinc-800 dark:text-atlas-light text-atlas-ink border-none px-4 py-2.5 rounded-lg cursor-pointer font-semibold w-full mt-2.5 hover:bg-atlas-mid hover:text-white dark:hover:bg-zinc-700 transition">+ Ajouter une ressource</button>
 			</div>
@@ -151,21 +159,22 @@
 			return (val || 0).toFixed(2) + ' €';
 		}
 
-		function addRow() {
+		function addRow(selectedItem = '', qty = 1) {
 			const container = document.getElementById('rows-container');
 			const rowDiv = document.createElement('div');
 			rowDiv.className = 'grid grid-cols-2 sm:grid-cols-[3fr_1fr_1fr_auto] gap-2.5 mb-2.5 items-center row-item';
 			
-			let optionsHtml = '<option value="" disabled selected>Choisir un matériau...</option>';
+			let optionsHtml = '<option value="" disabled>Choisir un matériau...</option>';
 			itemsCatalog.forEach(item => {
 				if(item.minPrice > 0) {
-					optionsHtml += `<option value="${item.name}">${item.name} (${item.minPrice} €)</option>`;
+					const isSelected = item.name === selectedItem ? 'selected' : '';
+					optionsHtml += `<option value="${item.name}" ${isSelected}>${item.name} (${item.minPrice} €)</option>`;
 				}
 			});
 
 			rowDiv.innerHTML = `
 				<select class="item-select p-2.5 border border-atlas-line dark:border-zinc-700 rounded-lg text-[14px] outline-none focus:border-atlas-green bg-white dark:bg-zinc-800 dark:text-white">${optionsHtml}</select>
-				<input type="number" min="1" value="1" class="item-qty p-2.5 border border-atlas-line dark:border-zinc-700 rounded-lg text-[14px] outline-none focus:border-atlas-green bg-transparent dark:bg-zinc-800 dark:text-white">
+				<input type="number" min="1" value="${qty}" class="item-qty p-2.5 border border-atlas-line dark:border-zinc-700 rounded-lg text-[14px] outline-none focus:border-atlas-green bg-transparent dark:bg-zinc-800 dark:text-white">
 				<input type="text" value="0.00 €" disabled class="item-price p-2.5 border border-atlas-line dark:border-zinc-700 rounded-lg text-[14px] bg-[#eef1ec] dark:bg-zinc-800 dark:text-zinc-400">
 				<button class="remove-row-btn bg-[#ffebe9] dark:bg-red-950/50 text-[#da3633] dark:text-red-400 border-none w-[38px] h-[38px] rounded-lg cursor-pointer font-bold hover:bg-[#ffdce0] dark:hover:bg-red-900/50">X</button>
 			`;
@@ -187,7 +196,6 @@
 			const toggleBtn = document.getElementById('dark-mode-toggle');
 			const htmlEl = document.documentElement;
 
-			// Check saved preference or system preference
 			if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
 				htmlEl.classList.add('dark');
 				toggleBtn.textContent = '☀️';
@@ -210,7 +218,11 @@
 		}
 
 		function setupListeners() {
-			document.getElementById('add-row-btn').addEventListener('click', addRow);
+			document.getElementById('add-row-btn').addEventListener('click', () => addRow());
+			
+			// Litematica import listener
+			document.getElementById('litematica-file-input').addEventListener('change', handleLitematicaImport);
+
 			document.querySelectorAll('input[name="service"]').forEach(el => {
 				el.addEventListener('change', (e) => {
 					const depotContainer = document.getElementById('depot-shulker-container');
@@ -222,6 +234,62 @@
 			document.getElementById('months').addEventListener('input', calculateTotals);
 			document.getElementById('shulker-force').addEventListener('input', calculateTotals);
 			document.getElementById('copy-btn').addEventListener('click', copyDevis);
+		}
+
+		function handleLitematicaImport(event) {
+			const file = event.target.files[0];
+			if (!file) return;
+
+			const reader = new FileReader();
+			reader.onload = function(e) {
+				try {
+					const data = JSON.parse(e.target.result);
+					if (!Array.isArray(data)) {
+						alert('Format invalide : Le fichier JSON doit être une liste (tableau).');
+						return;
+					}
+
+					// Clear current rows first
+					const container = document.getElementById('rows-container');
+					container.innerHTML = '';
+
+					let importedCount = 0;
+
+					data.forEach(entry => {
+						if (entry.RawItem && entry.TotalEstimate !== undefined) {
+							// Strip minecraft: prefix if it exists to match item names if necessary, 
+							// or match directly if catalog uses IDs or capitalized names.
+							// Assuming your economie_items.json uses capitalized names like "Stone" or exact IDs, 
+							// let's match case-insensitively or via cleaned names.
+							let rawName = entry.RawItem.replace('minecraft:', '');
+							
+							// Find matching item in catalog (checking id or name lowercase)
+							let matchedItem = itemsCatalog.find(i => 
+								i.id.toLowerCase() === rawName.toLowerCase() || 
+								i.name.toLowerCase() === rawName.replace(/_/g, ' ').toLowerCase()
+							);
+
+							if (matchedItem) {
+								addRow(matchedItem.name, entry.TotalEstimate);
+								importedCount++;
+							}
+						}
+					});
+
+					if (importedCount === 0) {
+						alert("Aucun matériau n'a pu être importé. Vérifiez que les identifiants correspondent au catalogue.");
+						addRow();
+					} else {
+						alert(`${importedCount} matériaux importés avec succès !`);
+					}
+				} catch (err) {
+					console.error(err);
+					alert("Erreur lors de la lecture du fichier JSON.");
+				}
+				// Reset file input
+				event.target.value = '';
+			};
+			reader.readAsText(file);
 		}
 
 		function calculateTotals() {
@@ -269,7 +337,7 @@
 
 			let sumDel = service === 'livraison' ? 15.00 : 0;
 			let sumRent = finalShulkers * 20.00 * months;
-			let sumDep = finalShulkers * 555.00;
+			let sumDep = finalShulkers * 55.00;
 
 			if (service === 'location') {
 				totalMat = 0;
@@ -277,8 +345,8 @@
 			}
 
 			const subtotal = totalMat + sumDel + sumRent;
-			const sumTax = subtotal * 0.087;
-			const total = subtotal + sumTax + sumDep;
+			let sumTax = subtotal * 0.087;
+			let total = subtotal + sumTax + sumDep;
 
 			document.getElementById('total-mat').textContent = formatMoney(totalMat);
 			document.getElementById('sum-del').textContent = formatMoney(sumDel);
