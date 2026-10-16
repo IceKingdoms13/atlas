@@ -146,7 +146,7 @@ const itemsMap = new Map();
 
 async function loadItems() {
 	try {
-		const response = await fetch('/economie_items.json');
+		const response = await fetch('/atlas/economie_items.json');
 		if (!response.ok) throw new Error('Erreur réseau');
 		items = await response.json();
 		initDatalist();
