@@ -82,6 +82,15 @@
 						<input type="file" id="litematica-file-input" accept=".json" class="hidden">
 					</div>
 				</div>
+
+				<!-- Sort Controls Bar -->
+				<div class="flex flex-wrap items-center gap-2 mb-4 text-[13px] text-atlas-muted dark:text-zinc-400">
+					<span class="font-semibold">Trier par :</span>
+					<button data-sort="name" class="sort-btn px-2.5 py-1 border border-atlas-line dark:border-zinc-700 rounded-md hover:border-atlas-green transition bg-transparent dark:text-zinc-300">Nom ↕</button>
+					<button data-sort="qty" class="sort-btn px-2.5 py-1 border border-atlas-line dark:border-zinc-700 rounded-md hover:border-atlas-green transition bg-transparent dark:text-zinc-300">Quantité ↕</button>
+					<button data-sort="price" class="sort-btn px-2.5 py-1 border border-atlas-line dark:border-zinc-700 rounded-md hover:border-atlas-green transition bg-transparent dark:text-zinc-300">Total Prix ↕</button>
+				</div>
+
 				<div id="rows-container"></div>
 				<button id="add-row-btn" class="bg-atlas-light dark:bg-zinc-800 dark:text-atlas-light text-atlas-ink border-none px-4 py-2.5 rounded-lg cursor-pointer font-semibold w-full mt-2.5 hover:bg-atlas-mid hover:text-white dark:hover:bg-zinc-700 transition">+ Ajouter une ressource</button>
 			</div>
@@ -141,6 +150,7 @@
 
 	<script>
 		let itemsCatalog = [];
+		let currentSort = { column: null, direction: 'asc' };
 
 		async function init() {
 			try {
@@ -192,6 +202,50 @@
 			calculateTotals();
 		}
 
+		function sortRows(column) {
+			const container = document.getElementById('rows-container');
+			const rows = Array.from(container.querySelectorAll('.row-item'));
+
+			if (currentSort.column === column) {
+				currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+			} else {
+				currentSort.column = column;
+				currentSort.direction = 'asc';
+			}
+
+			// Update sort buttons visual state
+			document.querySelectorAll('.sort-btn').forEach(btn => {
+				const btnCol = btn.getAttribute('data-sort');
+				if (btnCol === column) {
+					btn.textContent = `${btn.textContent.replace(/[↕︎↑↓]/g, '').trim()} ${currentSort.direction === 'asc' ? '↑' : '↓'}`;
+					btn.classList.add('border-atlas-green', 'text-atlas-green');
+				} else {
+					btn.textContent = `${btn.textContent.replace(/[↕︎↑↓]/g, '').trim()} ↕`;
+					btn.classList.remove('border-atlas-green', 'text-atlas-green');
+				}
+			});
+
+			rows.sort((a, b) => {
+				let valA, valB;
+
+				if (column === 'name') {
+					valA = a.querySelector('.item-select').value.toLowerCase();
+					valB = b.querySelector('.item-select').value.toLowerCase();
+					return currentSort.direction === 'asc' ? valA.localeCompare(valB) : valB.localeCompare(valA);
+				} else if (column === 'qty') {
+					valA = parseFloat(a.querySelector('.item-qty').value) || 0;
+					valB = parseFloat(b.querySelector('.item-qty').value) || 0;
+				} else if (column === 'price') {
+					valA = parseFloat(a.querySelector('.item-price').value.replace(' €', '')) || 0;
+					valB = parseFloat(b.querySelector('.item-price').value.replace(' €', '')) || 0;
+				}
+
+				return currentSort.direction === 'asc' ? valA - valB : valB - valA;
+			});
+
+			rows.forEach(row => container.appendChild(row));
+		}
+
 		function setupDarkMode() {
 			const toggleBtn = document.getElementById('dark-mode-toggle');
 			const htmlEl = document.documentElement;
@@ -220,6 +274,13 @@
 		function setupListeners() {
 			document.getElementById('add-row-btn').addEventListener('click', () => addRow());
 			
+			// Sort buttons listener
+			document.querySelectorAll('.sort-btn').forEach(btn => {
+				btn.addEventListener('click', () => {
+					sortRows(btn.getAttribute('data-sort'));
+				});
+			});
+
 			// Litematica import listener
 			document.getElementById('litematica-file-input').addEventListener('change', handleLitematicaImport);
 
@@ -257,13 +318,8 @@
 
 					data.forEach(entry => {
 						if (entry.RawItem && entry.TotalEstimate !== undefined) {
-							// Strip minecraft: prefix if it exists to match item names if necessary, 
-							// or match directly if catalog uses IDs or capitalized names.
-							// Assuming your economie_items.json uses capitalized names like "Stone" or exact IDs, 
-							// let's match case-insensitively or via cleaned names.
 							let rawName = entry.RawItem.replace('minecraft:', '');
 							
-							// Find matching item in catalog (checking id or name lowercase)
 							let matchedItem = itemsCatalog.find(i => 
 								i.id.toLowerCase() === rawName.toLowerCase() || 
 								i.name.toLowerCase() === rawName.replace(/_/g, ' ').toLowerCase()
