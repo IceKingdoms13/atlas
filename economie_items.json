@@ -1,0 +1,7282 @@
+[
+    {
+        "name": "Stone",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Granite",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Granite",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Diorite",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Diorite",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Andesite",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Andesite",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Grass Block",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Dirt",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Coarse Dirt",
+        "minPrice": 0.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Podzol",
+        "minPrice": 1.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Cobblestone",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Oak Planks",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Spruce Planks",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Birch Planks",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Jungle Planks",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Acacia Planks",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Oak Planks",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Bedrock",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Sand",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Sand",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Gravel",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Gold Ore",
+        "minPrice": 4.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Gold Ore",
+        "minPrice": 4.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Nether Gold Ore",
+        "minPrice": 4.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Iron Ore",
+        "minPrice": 6.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Iron Ore",
+        "minPrice": 6.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Coal Ore",
+        "minPrice": 0.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Coal Ore",
+        "minPrice": 0.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Copper Ore",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Copper Ore",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Oak Log",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Spruce Log",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Birch Log",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Jungle Log",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Acacia Log",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Oak Log",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Oak Log",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Spruce Log",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Birch Log",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Jungle Log",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Acacia Log",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Dark Oak Log",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Oak Wood",
+        "minPrice": 1.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Spruce Wood",
+        "minPrice": 1.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Birch Wood",
+        "minPrice": 1.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Jungle Wood",
+        "minPrice": 1.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Acacia Wood",
+        "minPrice": 1.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Dark Oak Wood",
+        "minPrice": 1.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Oak Wood",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Spruce Wood",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Birch Wood",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Jungle Wood",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Acacia Wood",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Oak Wood",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Sponge",
+        "minPrice": 15.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Wet Sponge",
+        "minPrice": 14.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Glass",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Lapis Lazuli Ore",
+        "minPrice": 1.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Lapis Lazuli Ore",
+        "minPrice": 1.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Lapis Lazuli Block",
+        "minPrice": 16.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Sandstone",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Chiseled Sandstone",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Cut Sandstone",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "White Wool",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Orange Wool",
+        "minPrice": 0.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Magenta Wool",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Blue Wool",
+        "minPrice": 1.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Yellow Wool",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Lime Wool",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Pink Wool",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Gray Wool",
+        "minPrice": 1.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Gray Wool",
+        "minPrice": 1.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Cyan Wool",
+        "minPrice": 1.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Purple Wool",
+        "minPrice": 1.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Blue Wool",
+        "minPrice": 1.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Brown Wool",
+        "minPrice": 3.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Green Wool",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Wool",
+        "minPrice": 0.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Black Wool",
+        "minPrice": 2.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Oak Slab",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Spruce Slab",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Birch Slab",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Jungle Slab",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Acacia Slab",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Oak Slab",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Stone Slab",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Smooth Stone Slab",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Sandstone Slab",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Cut Sandstone Slab",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Petrified Oak Slab",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Cobblestone Slab",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Brick Slab",
+        "minPrice": 1.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Stone Brick Slab",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Nether Brick Slab",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Quartz Slab",
+        "minPrice": 4.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Sandstone Slab",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Cut Red Sandstone Slab",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Purpur Slab",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Prismarine Slab",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Prismarine Brick Slab",
+        "minPrice": 2.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Prismarine Slab",
+        "minPrice": 3.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Smooth Quartz Block",
+        "minPrice": 10.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Smooth Red Sandstone",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Smooth Sandstone",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Smooth Stone",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Bricks",
+        "minPrice": 3.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Bookshelf",
+        "minPrice": 4.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Mossy Cobblestone",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Obsidian",
+        "minPrice": 14.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Crying Obsidian",
+        "minPrice": 22.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Respawn Anchor",
+        "minPrice": 91.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Purpur Block",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Purpur Pillar",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Purpur Stairs",
+        "minPrice": 2.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Oak Stairs",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Diamond Ore",
+        "minPrice": 16.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Diamond Ore",
+        "minPrice": 16.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Block of Diamond",
+        "minPrice": 148.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Cobblestone Stairs",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Redstone Ore",
+        "minPrice": 2.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Redstone Ore",
+        "minPrice": 2.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Ice",
+        "minPrice": 0.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Snow Block",
+        "minPrice": 0.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Pumpkin",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Carved Pumpkin",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Netherrack",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Soul Sand",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Glowstone",
+        "minPrice": 1.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Jack o'Lantern",
+        "minPrice": 1.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Stone Bricks",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Mossy Stone Bricks",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Cracked Stone Bricks",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Chiseled Stone Bricks",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Lodestone",
+        "minPrice": 63.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Melon",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Brick Stairs",
+        "minPrice": 5.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Stone Brick Stairs",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Mycelium",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Nether Bricks",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Nether Bricks Stairs",
+        "minPrice": 1.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Chiseled Nether Bricks",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Cracked Nether bricks",
+        "minPrice": 1.3,
+        "max_stack": 64
+    },
+    {
+        "name": "End Stone",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "End Stone Bricks",
+        "minPrice": 1.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Sandstone Stairs",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Emerald Ore",
+        "minPrice": 13.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Emerald Ore",
+        "minPrice": 13.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Emerald Block",
+        "minPrice": 148.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Spruce Stairs",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Birch Stairs",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Jungle Stairs",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Nether Quartz Ore",
+        "minPrice": 6.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Ancient Debris",
+        "minPrice": 11.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Block of Netherite",
+        "minPrice": 540.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Chiseled Quartz Block",
+        "minPrice": 8.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Block of Quartz",
+        "minPrice": 9.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Quartz Pillar",
+        "minPrice": 8.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Quartz Stairs",
+        "minPrice": 13.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Quartz Bricks",
+        "minPrice": 8.9,
+        "max_stack": 64
+    },
+    {
+        "name": "White Terracotta",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Orange Terracotta",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Magenta Terracotta",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Blue Terracotta",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Yellow Terracotta",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Lime Terracotta",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Pink Terracotta",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Gray Terracotta",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Gray Terracotta",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Cyan Terracotta",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Purple Terracotta",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Blue Terracotta",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Brown Terracotta",
+        "minPrice": 0.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Green Terracotta",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Terracotta",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Black Terracotta",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Hay Bale",
+        "minPrice": 1.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Terracotta",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Coal Block",
+        "minPrice": 7.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Packed Ice",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Acacia Stairs",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Oak Stairs",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "White Stained Glass",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Orange Stained Glass",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Magenta Stained Glass",
+        "minPrice": 0.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Blue Stained Glass",
+        "minPrice": 0.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Yellow Stained Glass",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Lime Stained Glass",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Pink Stained Glass",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Gray Stained Glass",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Gray Stained Glass",
+        "minPrice": 0.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Cyan Stained Glass",
+        "minPrice": 0.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Purple Stained Glass",
+        "minPrice": 0.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Blue Stained Glass",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Brown Stained Glass",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Green Stained Glass",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Stained Glass",
+        "minPrice": 0.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Black Stained Glass",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Prismarine",
+        "minPrice": 2.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Prismarine Brick",
+        "minPrice": 5.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Prismarine",
+        "minPrice": 6.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Prismarine Stairs",
+        "minPrice": 3.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Prismarine Brick Stairs",
+        "minPrice": 8.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Prismarine Stairs",
+        "minPrice": 10.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Sea Lantern",
+        "minPrice": 5.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Sandstone",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Chiseled Red Sandstone",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Cut Red Sandstone",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Sandstone Stairs",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Magma Block",
+        "minPrice": 13.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Nether Wart Block",
+        "minPrice": 5.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Nether Bricks",
+        "minPrice": 2.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Bone Blocks",
+        "minPrice": 3.25,
+        "max_stack": 64
+    },
+    {
+        "name": "White Concrete",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Orange Concrete",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Magenta Concrete",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Blue Concrete",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Yellow Concrete",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Lime Concrete",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Pink Concrete",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Gray Concrete",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Gray Concrete",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Cyan Concrete",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Purple Concrete",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Blue Concrete",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Brown Concrete",
+        "minPrice": 1.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Green Concrete",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Concrete",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Black Concrete",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "White Concrete Powder",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Orange Concrete Powder",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Magenta Concrete Powder",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Blue Concrete Powder",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Yellow Concrete Powder",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Lime Concrete Powder",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Pink Concrete Powder",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Gray Concrete Powder",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Gray Concrete Powder",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Cyan Concrete Powder",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Purple Concrete Powder",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Blue Concrete Powder",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Brown Concrete Powder",
+        "minPrice": 0.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Green Concrete Powder",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Concrete Powder",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Black Concrete Powder",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Tube Coral Block",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Brain Coral Block",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Bubble Coral Block",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Fire Coral Block",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Horn Coral Block",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Tube Coral Block",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Brain Coral Block",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Bubble Coral Block",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Fire Coral Block",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Horn Coral Block",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Blue Ice",
+        "minPrice": 1.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Granite Stairs",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Smooth Red Sandstone Stairs",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Mossy Stone Brick Stair",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Diorite Stairs",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Mossy Cobblestone Stairs",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "End Stone Brick Stairs",
+        "minPrice": 2.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Stone Stairs",
+        "minPrice": 0.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Smooth Sandstone Stairs",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Smooth Quartz Stairs",
+        "minPrice": 13.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Granite Stairs",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Andesite Stairs",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Nether Brick Stairs",
+        "minPrice": 3.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Andesite Stairs",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Diorite Stairs",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Granite Slab",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Smooth Red Sandstone Slab",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Mossy Stone Brick Slab",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Diorite Slab",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Mossy Cobblestone Slab",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "End Stone Brick Slab",
+        "minPrice": 0.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Smooth Sandstone Slab",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Smooth Quartz Slab",
+        "minPrice": 4.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Granite Slab",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Andesite Slab",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Nether Brick Slab",
+        "minPrice": 1.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Andesite Slab",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Diorite Slab",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Dried Kelp Block",
+        "minPrice": 1.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Block of Gold",
+        "minPrice": 54.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Block of Raw Gold",
+        "minPrice": 53.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Block of Iron",
+        "minPrice": 72.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Block of Raw Iron",
+        "minPrice": 71.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Block of Copper",
+        "minPrice": 13.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed Block of Copper",
+        "minPrice": 12.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Cut Copper",
+        "minPrice": 12.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed Cut Copper",
+        "minPrice": 11.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Cut Copper Slab",
+        "minPrice": 5.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed Cut Copper Slab",
+        "minPrice": 4.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Cut Copper Stairs",
+        "minPrice": 16.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed Cut Copper Stairs",
+        "minPrice": 14.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Exposed Copper",
+        "minPrice": 16.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed Exposed Copper",
+        "minPrice": 14.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Exposed Cut Copper",
+        "minPrice": 14.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed Exposed Cut Copper",
+        "minPrice": 13.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Exposed Cut Copper Slab",
+        "minPrice": 6.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed Exposed Cut Copper Slab",
+        "minPrice": 5.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Exposed Cut Copper Stairs",
+        "minPrice": 19.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed Exposed Cut Copper Stairs",
+        "minPrice": 19.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Wheathered Copper",
+        "minPrice": 19.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed Wheathered Copper",
+        "minPrice": 17.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Wheathered Cut Copper",
+        "minPrice": 17.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed Wheathered Cut Copper",
+        "minPrice": 15.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Wheathered Cut Copper Slab",
+        "minPrice": 7.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed Wheathered Cut Copper Slab",
+        "minPrice": 7.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Wheathered Cut Copper Stairs",
+        "minPrice": 23.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed Wheathered Cut Copper Stairs",
+        "minPrice": 21.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Oxidized Copper",
+        "minPrice": 23.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed Oxidized Copper",
+        "minPrice": 21.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Oxidized Cut Copper",
+        "minPrice": 20.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed oxidized Cut Copper",
+        "minPrice": 19.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Oxidized Cut Copper Slab",
+        "minPrice": 9.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed Oxidized Cut Copper Slab",
+        "minPrice": 8.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Oxidized Cut Copper Stairs",
+        "minPrice": 28.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Waxed Oxidized Cut Copper Stairs",
+        "minPrice": 25.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Block of Raw Copper",
+        "minPrice": 12.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Budding Amethyst",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Small Amethyst Bud",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Medium Amethyst Bud",
+        "minPrice": 0.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Large Amethyst Bud",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Amethyst Cluster",
+        "minPrice": 1.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Block of Amethyst",
+        "minPrice": 20.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Blackstone",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Gilded Blackstone",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Blackstone Slab",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Blackstone Stairs",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Blackstone Wall",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Blackstone",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Blackstone Slab",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Blackstone Stairs",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Blackstone Wall",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Blackstone Pressure Plate",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Blackstone Button",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Chiseled Polished Blackstone",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Blackstone Bricks",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Blackstone Bricks Slab",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Blackstone bricks Stairs",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Blackstone Bricks Wall",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Crackled Polished Blackstone Bricks",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Soul Soil",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Basalt",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Basalt",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Smooth Basalt",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Calcite",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Cobbled Deepslate",
+        "minPrice": 0.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Cobbled Deepslate Slab",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Chiseled Deepslate",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Cobbled Deepslate Wall",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Cobbled Deepslate Stairs",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Deepslate",
+        "minPrice": 0.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Deepslate Slab",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Deepslate Wall",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Deepslate Stairs",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Bricks",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Crackled Deepslate Bricks",
+        "minPrice": 0.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Brick Slab",
+        "minPrice": 0.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Brick Wall",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Brick Stairs",
+        "minPrice": 1.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Tiles",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Crackled Deepslate Tiles",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Tiles Slab",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Tiles Wall",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Deepslate Tiles Stairs",
+        "minPrice": 0.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Pointed Dripstone",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Dripstone Block",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Moss Block",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Moss Carpet",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Oak Sapling",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Spruce Sapling",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Birch Sapling",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Jungle Sapling",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Acacia Sapling",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Oak Sapling",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Oak Leaves",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Spruce Leaves",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Birch Leaves",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Jungle Leaves",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Acacia Leaves",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Oak Leaves",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Azalea",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Flowering Azalea",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Azalea Leaves",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Flowering Azalea Leaves",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Cobweb",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Grass",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Fern",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Bush",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Seagrass",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Sea Pickle",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Dandelion",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Poppy",
+        "minPrice": 0.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Blue Orchid",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Allium",
+        "minPrice": 0.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Azure Bluet",
+        "minPrice": 0.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Tulip",
+        "minPrice": 0.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Orange Tulip",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "White Tulip",
+        "minPrice": 0.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Pink Tulip",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Oxeye Daisy",
+        "minPrice": 0.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Cornflower",
+        "minPrice": 1.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Lily of the Valley",
+        "minPrice": 0.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Wither Rose",
+        "minPrice": 3.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Brown Mushroom",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Mushroom",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Torch",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Soul Torch",
+        "minPrice": 0.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Candle",
+        "minPrice": 0.35,
+        "max_stack": 64
+    },
+    {
+        "name": "White Candle",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Orange Candle",
+        "minPrice": 0.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Magenta Candle",
+        "minPrice": 1.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Blue Candle",
+        "minPrice": 1.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Yellow Candle",
+        "minPrice": 0.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Lime Candle",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Pink Candle",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Gray Candle",
+        "minPrice": 1.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Gray Candle",
+        "minPrice": 1.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Cyan Candle",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Purple Candle",
+        "minPrice": 1.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Blue Candle",
+        "minPrice": 1.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Brown Candle",
+        "minPrice": 3.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Green Candle",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Candle",
+        "minPrice": 1.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Black Candle",
+        "minPrice": 2.1,
+        "max_stack": 64
+    },
+    {
+        "name": "End Rod",
+        "minPrice": 4.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Chorus Plant",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Chorus Flower",
+        "minPrice": 2.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Chest",
+        "minPrice": 1.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Crafting Table",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Farmland",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Furnace",
+        "minPrice": 3.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Ladder",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Snow",
+        "minPrice": 0.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Cactus",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Jukebox",
+        "minPrice": 16.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Oak Fence",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Spruce Fence",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Birch Fence",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Jungle Fence",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Acacia Fence",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Oak Fence",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Infested Stone",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Infested Cobblestone",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Infested Stone Bricks",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Infested Mossy Stone Bricks",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Infested Cracked Stone Bricks",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Infested Chiseled Stone Bricks",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Brown Mushroom Block",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Mushroom Block",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Mushroom Stem",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Iron Bars",
+        "minPrice": 2.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Glass Pane",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Vines",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Lily Pad",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Small Dripleaf",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Great Dripleaf",
+        "minPrice": 1.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Nether Brick Fence",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Enchanting Table",
+        "minPrice": 92.45,
+        "max_stack": 64
+    },
+    {
+        "name": "End Portal Frame",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Ender Chest",
+        "minPrice": 139.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Cobblestone Wall",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Mossy Cobblestone Wall",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Brick Wall",
+        "minPrice": 3.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Prismarine Wall",
+        "minPrice": 2.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Sandstone Wall",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Mossy Stone Brick Wall",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Granite Wall",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Stone Brick Wall",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Nether Brick Wall",
+        "minPrice": 1.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Andesite Wall",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Nether Brick Wall",
+        "minPrice": 2.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Sandstone Wall",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "End Stone Brick Wall",
+        "minPrice": 1.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Diorite Wall",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Anvil",
+        "minPrice": 248.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Chipped Anvil",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Damaged Anvil",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "White Carpet",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Orange Carpet",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Magenta Carpet",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Blue Carpet",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Yellow Carpet",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Lime Carpet",
+        "minPrice": 0.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Pink Carpet",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Gray Carpet",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Gray Carpet",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Cyan Carpet",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Purple Carpet",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Blue Carpet",
+        "minPrice": 0.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Brown Carpet",
+        "minPrice": 2.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Green Carpet",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Carpet",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Black Carpet",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Slime Block",
+        "minPrice": 4.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Grass Path",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Sunflower",
+        "minPrice": 1.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Lilac",
+        "minPrice": 1.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Rose Bush",
+        "minPrice": 1.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Peony",
+        "minPrice": 1.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Tall Grass",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Large Fern",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "White Stained Glass Pane",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Orange Stained Glass Pane",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Magenta Stained Glass Pane",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Blue Stained Glass Pane",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Yellow Stained Glass Pane",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Lime Stained Glass Pane",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Pink Stained Glass Pane",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Gray Stained Glass Pane",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Gray Stained Glass Pane",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Cyan Stained Glass Pane",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Purple Stained Glass Pane",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Blue Stained Glass Pane",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Brown Stained Glass Pane",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Green Stained Glass Pane",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Stained Glass Pane",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Black Stained Glass Pane",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Shulker Box",
+        "minPrice": 551.75,
+        "max_stack": 1
+    },
+    {
+        "name": "White Shulker Box",
+        "minPrice": 552.1,
+        "max_stack": 1
+    },
+    {
+        "name": "Orange Shulker Box",
+        "minPrice": 552.45,
+        "max_stack": 1
+    },
+    {
+        "name": "Magenta Shulker Box",
+        "minPrice": 552.6,
+        "max_stack": 1
+    },
+    {
+        "name": "Light Blue Shulker Box",
+        "minPrice": 552.65,
+        "max_stack": 1
+    },
+    {
+        "name": "Yellow Shulker Box",
+        "minPrice": 552.35,
+        "max_stack": 1
+    },
+    {
+        "name": "Lime Shulker Box",
+        "minPrice": 552.15,
+        "max_stack": 1
+    },
+    {
+        "name": "Pink Shulker Box",
+        "minPrice": 552.3,
+        "max_stack": 1
+    },
+    {
+        "name": "Gray Shulker Box",
+        "minPrice": 552.9,
+        "max_stack": 1
+    },
+    {
+        "name": "Light Gray Shulker Box",
+        "minPrice": 552.65,
+        "max_stack": 1
+    },
+    {
+        "name": "Cyan Shulker Box",
+        "minPrice": 552.75,
+        "max_stack": 1
+    },
+    {
+        "name": "Purple Shulker Box",
+        "minPrice": 552.9,
+        "max_stack": 1
+    },
+    {
+        "name": "Blue Shulker Box",
+        "minPrice": 553.25,
+        "max_stack": 1
+    },
+    {
+        "name": "Brown Shulker Box",
+        "minPrice": 555.75,
+        "max_stack": 1
+    },
+    {
+        "name": "Green Shulker Box",
+        "minPrice": 552.25,
+        "max_stack": 1
+    },
+    {
+        "name": "Red Shulker Box",
+        "minPrice": 552.55,
+        "max_stack": 1
+    },
+    {
+        "name": "Black Shulker Box",
+        "minPrice": 553.75,
+        "max_stack": 1
+    },
+    {
+        "name": "White Glazed Terracotta",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Orange Glazed Terracotta",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Magenta Glazed Terracotta",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Blue Glazed Terracotta",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Yellow Glazed Terracotta",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Lime Glazed Terracotta",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Pink Glazed Terracotta",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Gray Glazed Terracotta",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Gray Glazed Terracotta",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Cyan Glazed Terracotta",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Purple Glazed Terracotta",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Blue Glazed Terracotta",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Brown Glazed Terracotta",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Green Glazed Terracotta",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Red Glazed Terracotta",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Black Glazed Terracotta",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Tube Coral",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Brain Coral",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Bubble Coral",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Fire Coral",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Horn Coral",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Tube Coral",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Brain Coral",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Bubble Coral",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Fire Coral",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Horn Coral",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Tube Coral Fan",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Brain Coral Fan",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Bubble Coral Fan",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Fire Coral Fan",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Horn Coral Fan",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Tube Coral Fan",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Brain Coral Fan",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Bubble Coral Fan",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Fire Coral Fan",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Dead Horn Coral Fan",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Scaffolding",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Painting",
+        "minPrice": 0.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Oak Sign",
+        "minPrice": 0.4,
+        "max_stack": 16
+    },
+    {
+        "name": "Spruce Sign",
+        "minPrice": 0.4,
+        "max_stack": 16
+    },
+    {
+        "name": "Birch Sign",
+        "minPrice": 0.4,
+        "max_stack": 16
+    },
+    {
+        "name": "Jungle Sign",
+        "minPrice": 0.4,
+        "max_stack": 16
+    },
+    {
+        "name": "Acacia Sign",
+        "minPrice": 0.4,
+        "max_stack": 16
+    },
+    {
+        "name": "Dark Oak Sign",
+        "minPrice": 0.4,
+        "max_stack": 16
+    },
+    {
+        "name": "White Bed",
+        "minPrice": 1.4,
+        "max_stack": 1
+    },
+    {
+        "name": "Orange Bed",
+        "minPrice": 3.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Magenta Bed",
+        "minPrice": 3.4,
+        "max_stack": 1
+    },
+    {
+        "name": "Light Blue Bed",
+        "minPrice": 3.55,
+        "max_stack": 1
+    },
+    {
+        "name": "Yellow Bed",
+        "minPrice": 2.75,
+        "max_stack": 1
+    },
+    {
+        "name": "Lime Bed",
+        "minPrice": 2.3,
+        "max_stack": 1
+    },
+    {
+        "name": "Pink Bed",
+        "minPrice": 2.7,
+        "max_stack": 1
+    },
+    {
+        "name": "Gray Bed",
+        "minPrice": 4.15,
+        "max_stack": 1
+    },
+    {
+        "name": "Light Gray Bed",
+        "minPrice": 3.45,
+        "max_stack": 1
+    },
+    {
+        "name": "Cyan Bed",
+        "minPrice": 3.75,
+        "max_stack": 1
+    },
+    {
+        "name": "Purple Bed",
+        "minPrice": 4.1,
+        "max_stack": 1
+    },
+    {
+        "name": "Blue Bed",
+        "minPrice": 4.95,
+        "max_stack": 1
+    },
+    {
+        "name": "Brown Bed",
+        "minPrice": 11.05,
+        "max_stack": 1
+    },
+    {
+        "name": "Green Bed",
+        "minPrice": 2.55,
+        "max_stack": 1
+    },
+    {
+        "name": "Red Bed",
+        "minPrice": 3.25,
+        "max_stack": 1
+    },
+    {
+        "name": "Black Bed",
+        "minPrice": 6.15,
+        "max_stack": 1
+    },
+    {
+        "name": "Item Frame",
+        "minPrice": 1.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Glow item Frame",
+        "minPrice": 3.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Flower Pot",
+        "minPrice": 2.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Skeleton Skull",
+        "minPrice": 4.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Wither Skeleton Skull",
+        "minPrice": 3333.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Player Head",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Zombie Head",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Creeper Head",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Dragon Head",
+        "minPrice": 1872.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Armor Stand",
+        "minPrice": 0.8,
+        "max_stack": 16
+    },
+    {
+        "name": "White Banner",
+        "minPrice": 1.7,
+        "max_stack": 16
+    },
+    {
+        "name": "Orange Banner",
+        "minPrice": 4.95,
+        "max_stack": 16
+    },
+    {
+        "name": "Magenta Banner",
+        "minPrice": 5.7,
+        "max_stack": 16
+    },
+    {
+        "name": "Light Blue Banner",
+        "minPrice": 5.95,
+        "max_stack": 16
+    },
+    {
+        "name": "Yellow Banner",
+        "minPrice": 4.45,
+        "max_stack": 16
+    },
+    {
+        "name": "Lime Banner",
+        "minPrice": 3.55,
+        "max_stack": 16
+    },
+    {
+        "name": "Pink Banner",
+        "minPrice": 4.25,
+        "max_stack": 16
+    },
+    {
+        "name": "Gray Banner",
+        "minPrice": 7.2,
+        "max_stack": 16
+    },
+    {
+        "name": "Light Gray Banner",
+        "minPrice": 5.85,
+        "max_stack": 16
+    },
+    {
+        "name": "Cyan Banner",
+        "minPrice": 6.4,
+        "max_stack": 16
+    },
+    {
+        "name": "Purple Banner",
+        "minPrice": 7.1,
+        "max_stack": 16
+    },
+    {
+        "name": "Blue Banner",
+        "minPrice": 8.8,
+        "max_stack": 16
+    },
+    {
+        "name": "Brown Banner",
+        "minPrice": 20.95,
+        "max_stack": 16
+    },
+    {
+        "name": "Green Banner",
+        "minPrice": 3.95,
+        "max_stack": 16
+    },
+    {
+        "name": "Red Banner",
+        "minPrice": 5.4,
+        "max_stack": 16
+    },
+    {
+        "name": "Black Banner",
+        "minPrice": 11.25,
+        "max_stack": 16
+    },
+    {
+        "name": "End Crystal",
+        "minPrice": 13.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Loom",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Barrel",
+        "minPrice": 1.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Smoker",
+        "minPrice": 7.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Blast Furnace",
+        "minPrice": 41.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Cartography Table",
+        "minPrice": 1.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Fletching Table",
+        "minPrice": 4.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Grindstone",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Smithing Table",
+        "minPrice": 15.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Stonecutter",
+        "minPrice": 8.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Bell",
+        "minPrice": 10.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Lantern",
+        "minPrice": 6.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Soul Lantern",
+        "minPrice": 6.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Campfire",
+        "minPrice": 3.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Soul Campfire",
+        "minPrice": 3.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Bee Nest",
+        "minPrice": 15.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Bee Hive",
+        "minPrice": 1.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Honey Block",
+        "minPrice": 48.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Honeycomb Block",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Dragon Egg",
+        "minPrice": 6240.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Crimson Nylium",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Crimson Roots",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Crimson Fungus",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Crimson Stem",
+        "minPrice": 2.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Crimson Hyphae",
+        "minPrice": 2.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Crimson Stem",
+        "minPrice": 2.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Crimson Hyphae",
+        "minPrice": 3.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Nether Wart Block",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Weeping Vines",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Crimson Planks",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Crimson Slab",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Crimson Pressure Plate",
+        "minPrice": 1.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Crimson Fence",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Crimson Trapdoor",
+        "minPrice": 1.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Crimson Door",
+        "minPrice": 1.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Crimson Fence Gate",
+        "minPrice": 1.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Crimson Button",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Crimson Stairs",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Crimson Sign",
+        "minPrice": 1.2,
+        "max_stack": 16
+    },
+    {
+        "name": "Warped Nylium",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Warped Roots",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Nether Sprouts",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Warped Fungus",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Warped Stem",
+        "minPrice": 2.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Warped Hyphae",
+        "minPrice": 2.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Warped Stem",
+        "minPrice": 2.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Warped Hyphae",
+        "minPrice": 3.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Warped Wart Block",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "twisting Vines",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Warped Planks",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Warped Slab",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Warped Pressure Plate",
+        "minPrice": 1.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Warped Fence",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Warped Trapdoor",
+        "minPrice": 1.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Warped Door",
+        "minPrice": 1.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Warped Fence Gate",
+        "minPrice": 1.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Warped Button",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Warped Stairs",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Warped Sign",
+        "minPrice": 1.1,
+        "max_stack": 16
+    },
+    {
+        "name": "Shroomlight",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Mangrove Log",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Mangrove Planks",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Mangrove Wood",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Mangrove Log",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Mangrove Wood",
+        "minPrice": 1.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Mangrove Slab",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Mangrove Stairs",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Mangrove Fence",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Mangrove Fence Gate",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Mangrove Sign",
+        "minPrice": 0.4,
+        "max_stack": 16
+    },
+    {
+        "name": "Mangrove Door",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Mangrove Trapdoor",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Mangrove Roots",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Mud",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Mud Bricks",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Mud Bricks Slab",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Mud Bricks Stairs",
+        "minPrice": 0.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Mud Bricks Wall",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Muddy Mangrove Roots",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Packed Mud",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Reinforced Deepslate",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Sculk",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Block of Bamboo",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Bamboo Block",
+        "minPrice": 1.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Bamboo Mosaic",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Bamboo Mosaic Stairs",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Bamboo Mosaic Slab",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Bamboo Planks",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Bamboo Door",
+        "minPrice": 0.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Bamboo Fence",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Bamboo Fence Gate",
+        "minPrice": 1.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Bamboo Sign",
+        "minPrice": 1.0,
+        "max_stack": 16
+    },
+    {
+        "name": "Bamboo Slab",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Bamboo Stairs",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Bamboo Trapdoor",
+        "minPrice": 1.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Cherry Log",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Cherry Log",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Cherry Wood",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Stripped Cherry Wood",
+        "minPrice": 1.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Cherry Planks",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Cherry Door",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Cherry Fence",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Cherry Fence Gate",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Cherry Sign",
+        "minPrice": 0.4,
+        "max_stack": 16
+    },
+    {
+        "name": "Cherry Slab",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Cherry Stairs",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Cherry Trapdoor",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Oak Hanging Sign",
+        "minPrice": 18.6,
+        "max_stack": 16
+    },
+    {
+        "name": "Spruce Hanging Sign",
+        "minPrice": 18.6,
+        "max_stack": 16
+    },
+    {
+        "name": "Birch Hanging Sign",
+        "minPrice": 18.6,
+        "max_stack": 16
+    },
+    {
+        "name": "Jungle Hanging Sign",
+        "minPrice": 18.6,
+        "max_stack": 16
+    },
+    {
+        "name": "Acacia Hanging Sign",
+        "minPrice": 18.6,
+        "max_stack": 16
+    },
+    {
+        "name": "Dark Oak Hanging Sign",
+        "minPrice": 18.6,
+        "max_stack": 16
+    },
+    {
+        "name": "Mangrove Hanging Sign",
+        "minPrice": 18.6,
+        "max_stack": 16
+    },
+    {
+        "name": "Crimson Hanging Sign",
+        "minPrice": 24.5,
+        "max_stack": 16
+    },
+    {
+        "name": "Warped Hanging Sign",
+        "minPrice": 24.5,
+        "max_stack": 16
+    },
+    {
+        "name": "Bamboo Hanging Sign",
+        "minPrice": 20.05,
+        "max_stack": 16
+    },
+    {
+        "name": "Cherry Hanging Sign",
+        "minPrice": 18.6,
+        "max_stack": 16
+    },
+    {
+        "name": "Suspicious Gravel",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Suspicious Sand",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Chiseled Copper",
+        "minPrice": 9.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Chiseled Tuff",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Copper Bulb",
+        "minPrice": 56.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Copper Door",
+        "minPrice": 2.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Copper Grate",
+        "minPrice": 12.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Copper Trapdoor",
+        "minPrice": 4.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Tuff",
+        "minPrice": 0.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Polished Tuff",
+        "minPrice": 3.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Tuff Bricks",
+        "minPrice": 2.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Tuff Slab",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Tuff Stairs",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Tuff Wall",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Pearlescent Froglight",
+        "minPrice": 19.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Verdant Froglight",
+        "minPrice": 19.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Ochre Froglight",
+        "minPrice": 19.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Mangrove Leaves",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Mangrove Propagule",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Sculk Catalyst",
+        "minPrice": 15.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Sculk Shrieker",
+        "minPrice": 16.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Sculk Vein",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Chain",
+        "minPrice": 9.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Cherry Leaves",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Cherry Sapling",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Chiseled Bookshelf",
+        "minPrice": 1.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Brick Decorated Pot",
+        "minPrice": 3.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Angler Decorated Pot",
+        "minPrice": 19.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Archer Decorated Pot",
+        "minPrice": 10.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Arms Up Decorated Pot",
+        "minPrice": 5.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Blade Decorated Pot",
+        "minPrice": 19.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Brewer Decorated Pot",
+        "minPrice": 5.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Burn Decorated Pot",
+        "minPrice": 15.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Danger Decorated Pot",
+        "minPrice": 15.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Explorer Decorated Pot",
+        "minPrice": 19.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Friend Decorated Pot",
+        "minPrice": 15.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Heart Decorated Pot",
+        "minPrice": 15.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Heartbreak Decorated Pot",
+        "minPrice": 15.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Howl Decorated Pot",
+        "minPrice": 15.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Miner Decorated Pot",
+        "minPrice": 10.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Mourner Decorated Pot",
+        "minPrice": 19.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Plenty Decorated Pot",
+        "minPrice": 19.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Prize Decorated Pot",
+        "minPrice": 10.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Sheaf Decorated Pot",
+        "minPrice": 15.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Shelter Decorated Pot",
+        "minPrice": 19.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Skull Decorated Pot",
+        "minPrice": 10.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Snort Decorated Pot",
+        "minPrice": 19.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Pink Petals",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Pitcher Plant",
+        "minPrice": 2.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Torchflower",
+        "minPrice": 2.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Dispenser",
+        "minPrice": 4.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Note Block",
+        "minPrice": 2.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Sticky Piston",
+        "minPrice": 11.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Piston",
+        "minPrice": 11.2,
+        "max_stack": 64
+    },
+    {
+        "name": "TNT",
+        "minPrice": 11.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Lever",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Stone Pressure Plate",
+        "minPrice": 1.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Oak Pressure Plate",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Spruce Pressure Plate",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Birch Pressure Plate",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Jungle Pressure Plate",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Acacia Pressure Plate",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Oak Pressure Plate",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Redstone Torch",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Stone Button",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Oak Trapdoor",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Spruce Trapdoor",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Birch Trapdoor",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Jungle Trapdoor",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Acacia Trapdoor",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Oak Trapdoor",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Oak Fence Gate",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Spruce Fence Gate",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Birch Fence Gate",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Jungle Fence Gate",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Acacia Fence Gate",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Oak Fence Gate",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Redstone Lamp",
+        "minPrice": 3.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Tripwire Hook",
+        "minPrice": 8.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Oak Button",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Spruce Button",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Birch Button",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Jungle Button",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Acacia Button",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Oak Button",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Trapped Chest",
+        "minPrice": 8.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Weighted Pressure Plate",
+        "minPrice": 12.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Heavy Weighted Pressure Plate",
+        "minPrice": 16.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Daylight Detector",
+        "minPrice": 9.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Redstone Block",
+        "minPrice": 4.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Hopper",
+        "minPrice": 41.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Dropper",
+        "minPrice": 4.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Iron Trapdoor",
+        "minPrice": 32.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Observer",
+        "minPrice": 6.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Iron Door",
+        "minPrice": 10.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Oak Door",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Spruce Door",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Birch Door",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Jungle Door",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Acacia Door",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Dark Oak Door",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Redstone Repeater",
+        "minPrice": 3.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Redstone Comparator",
+        "minPrice": 6.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Redstone Dust",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Lectern",
+        "minPrice": 4.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Target",
+        "minPrice": 3.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Powered Rail",
+        "minPrice": 6.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Detector Rail",
+        "minPrice": 8.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Rail",
+        "minPrice": 8.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Activator Rail",
+        "minPrice": 8.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Minecart",
+        "minPrice": 40.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Saddle",
+        "minPrice": 11.4,
+        "max_stack": 1
+    },
+    {
+        "name": "Oak Boat",
+        "minPrice": 1.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Minecart with Chest",
+        "minPrice": 37.45,
+        "max_stack": 1
+    },
+    {
+        "name": "Minecart with Furnace",
+        "minPrice": 39.2,
+        "max_stack": 1
+    },
+    {
+        "name": "Carrot On a Stick",
+        "minPrice": 0.85,
+        "max_stack": 1
+    },
+    {
+        "name": "Warped Fungus On a Stick",
+        "minPrice": 1.2,
+        "max_stack": 1
+    },
+    {
+        "name": "Minecart with TNT",
+        "minPrice": 46.6,
+        "max_stack": 1
+    },
+    {
+        "name": "Minecart with Hopper",
+        "minPrice": 73.45,
+        "max_stack": 1
+    },
+    {
+        "name": "Lightning Rod",
+        "minPrice": 4.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Mangrove Pressure Plate",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Mangrove Button",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Sculk sensor",
+        "minPrice": 17.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Bamboo Button",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Bamboo Pressure Plate",
+        "minPrice": 0.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Calibrated Sculk Sensor",
+        "minPrice": 42.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Cherry Button",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Cherry Pressure Plate",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Crafter",
+        "minPrice": 41.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Elytra",
+        "minPrice": 960.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Broken Elytra",
+        "minPrice": 1023.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Spruce Boat",
+        "minPrice": 1.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Birch Boat",
+        "minPrice": 1.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Jungle Boat",
+        "minPrice": 1.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Acacia Boat",
+        "minPrice": 1.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Dark Oak Boat",
+        "minPrice": 1.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Boat with a chest",
+        "minPrice": 2.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Mangrove Boat",
+        "minPrice": 1.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Cherry Boat",
+        "minPrice": 1.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Cherry Boat with a Chest",
+        "minPrice": 2.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Raft",
+        "minPrice": 2.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Raft with a Chest",
+        "minPrice": 3.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Beacon",
+        "minPrice": 9040.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Turtle Egg",
+        "minPrice": 5.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Conduit",
+        "minPrice": 117.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Composter",
+        "minPrice": 1.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Scute",
+        "minPrice": 2.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Coal",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Charcoal",
+        "minPrice": 1.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Netherite Ingot",
+        "minPrice": 60.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Netherite Scrap",
+        "minPrice": 11.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Diamond",
+        "minPrice": 16.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Iron Ingot",
+        "minPrice": 8.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Raw Iron",
+        "minPrice": 7.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Gold Ingot",
+        "minPrice": 6.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Raw Gold",
+        "minPrice": 5.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Copper Ingot",
+        "minPrice": 1.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Raw Copper",
+        "minPrice": 1.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Amethyst Shard",
+        "minPrice": 5.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Stick",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Bowl",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "String",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Feather",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Gunpowder",
+        "minPrice": 2.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Wheat Seeds",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Wheat",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Flint",
+        "minPrice": 1.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Bucket",
+        "minPrice": 21.6,
+        "max_stack": 16
+    },
+    {
+        "name": "Water Bucket",
+        "minPrice": 23.75,
+        "max_stack": 1
+    },
+    {
+        "name": "Lava Bucket",
+        "minPrice": 39.75,
+        "max_stack": 1
+    },
+    {
+        "name": "Snowball",
+        "minPrice": 0.0,
+        "max_stack": 16
+    },
+    {
+        "name": "Leather",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Milk Bucket",
+        "minPrice": 24.3,
+        "max_stack": 1
+    },
+    {
+        "name": "Bucket of Pufferfish",
+        "minPrice": 27.3,
+        "max_stack": 1
+    },
+    {
+        "name": "Bucket of Salmon",
+        "minPrice": 26.75,
+        "max_stack": 1
+    },
+    {
+        "name": "Bucket of Cod",
+        "minPrice": 26.55,
+        "max_stack": 1
+    },
+    {
+        "name": "Bucket of Tropical Fish",
+        "minPrice": 26.75,
+        "max_stack": 1
+    },
+    {
+        "name": "Bucket of Axolotl",
+        "minPrice": 34.75,
+        "max_stack": 1
+    },
+    {
+        "name": "Bundle",
+        "minPrice": 1.85,
+        "max_stack": 1
+    },
+    {
+        "name": "Brick",
+        "minPrice": 1.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Clay",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Sugar Cane",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Kelp",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Bamboo",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Paper",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Book",
+        "minPrice": 1.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Slimeball",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Egg",
+        "minPrice": 0.5,
+        "max_stack": 16
+    },
+    {
+        "name": "Glowstone Dust",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Ink Sac",
+        "minPrice": 2.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Glow Ink Sac",
+        "minPrice": 2.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Rose Red",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Cactus Green",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Cocoa Beans",
+        "minPrice": 0.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Lapis Lazuli",
+        "minPrice": 1.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Purple Dye",
+        "minPrice": 1.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Cyan Dye",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Gray Dye",
+        "minPrice": 0.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Gray Dye",
+        "minPrice": 1.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Pink Dye",
+        "minPrice": 0.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Lime Dye",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Dandelion Yellow",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Light Blue Dye",
+        "minPrice": 0.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Magenta Dye",
+        "minPrice": 0.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Orange Dye",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Bone Meal",
+        "minPrice": 0.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Blue Dye",
+        "minPrice": 1.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Brown Dye",
+        "minPrice": 4.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Black Dye",
+        "minPrice": 2.0,
+        "max_stack": 64
+    },
+    {
+        "name": "White Dye",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Bone",
+        "minPrice": 1.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Sugar",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Pumpkin Seeds",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Melon Seeds",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Ender Pearl",
+        "minPrice": 0.3,
+        "max_stack": 16
+    },
+    {
+        "name": "Blaze Rod",
+        "minPrice": 21.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Gold Nugget",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Nether Wart",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Eye of Ender",
+        "minPrice": 10.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Bat Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Bee Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Blaze Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Cat Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Cave Spider Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Chicken Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Cod Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Cow Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Creeper Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Dolphin Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Donkey Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Drowned Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Elder Guardian Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Enderman Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Endermite Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Evoker Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Fox Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Ghast Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Guardian Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Horse Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Husk Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Llama Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Magma Cube Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Mooshroom Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Mule Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Ocelot Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Panda Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Parrot Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Phantom Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Pig Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Pillager Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Polar Bear Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Pufferfish Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Rabbit Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Ravager Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Salmon Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Sheep Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Shulker Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Silverfish Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Skeleton Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Sketeton Horse Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Slime Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Spider Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Squid Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Stray Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Trader Llama Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Tropical Fish Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Turtle Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Vex Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Villager Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Vindicator Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Wandering Trader Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Witch Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Wither Skeleton Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Wolf Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Zombie Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Zombie Horse Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Zombie Pigman Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Zombie Villager Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Bottle o' Enchanting",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Fire Charge",
+        "minPrice": 13.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Book and Quill",
+        "minPrice": 3.5,
+        "max_stack": 1
+    },
+    {
+        "name": "Emerald",
+        "minPrice": 16.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Empty Map",
+        "minPrice": 27.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Nether Star",
+        "minPrice": 10000.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Firework Rocket",
+        "minPrice": 2.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Firework Star",
+        "minPrice": 3.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Nether Brick",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Nether Quartz",
+        "minPrice": 2.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Prismarine Shard",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Prismarine Crystals",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Rabbit Hide",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Iron Horse Armor",
+        "minPrice": 93.6,
+        "max_stack": 1
+    },
+    {
+        "name": "Gold Horse Armor",
+        "minPrice": 70.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Diamond Horse Armor",
+        "minPrice": 193.05,
+        "max_stack": 1
+    },
+    {
+        "name": "Leather Horse Armor",
+        "minPrice": 6.3,
+        "max_stack": 1
+    },
+    {
+        "name": "Chorus Fruit",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Popped Chorus Fruit",
+        "minPrice": 0.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Beetroot Seeds",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Shulker Shell",
+        "minPrice": 250.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Iron Nugget",
+        "minPrice": 0.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : C418 - 13",
+        "minPrice": 13.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : C418 - Cat",
+        "minPrice": 13.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : C418 - Blocks",
+        "minPrice": 13.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : C418 - Chirp",
+        "minPrice": 13.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : C418 - Far",
+        "minPrice": 13.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : C418 - Mall",
+        "minPrice": 13.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : C418 - Mellohi",
+        "minPrice": 13.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : C418 - Stal",
+        "minPrice": 13.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : C418 - Strad",
+        "minPrice": 13.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : C418 - Ward",
+        "minPrice": 13.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : C418 - 11",
+        "minPrice": 13.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : C418 - Wait",
+        "minPrice": 13.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc - Pigstep",
+        "minPrice": 62.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Nautilus Shell",
+        "minPrice": 10.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Heart of the Sea",
+        "minPrice": 50.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Banner Pattern : Flower Charge",
+        "minPrice": 1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Banner Pattern : Skull Charge",
+        "minPrice": 3000.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Banner Pattern : Creeper Charge",
+        "minPrice": -0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Banner Pattern : Thing",
+        "minPrice": 624.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Banner Pattern : Globe",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Banner pattern : Snout",
+        "minPrice": 60.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Honeycomb",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Frogspawn",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Bucket of Tadpole",
+        "minPrice": 8.2,
+        "max_stack": 1
+    },
+    {
+        "name": "Disc Fragment",
+        "minPrice": 7.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Echo Shard",
+        "minPrice": 6.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Goat Horn : Ponder",
+        "minPrice": 36.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Goat Horn : Sing",
+        "minPrice": 36.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Goat Horn : Seek",
+        "minPrice": 36.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Goat Horn : Feel",
+        "minPrice": 36.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Goat Horn : Admire",
+        "minPrice": 36.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Goat Horn : Call",
+        "minPrice": 36.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Goat Horn : Yearn",
+        "minPrice": 36.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Goat Horn : Dream",
+        "minPrice": 36.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : 5",
+        "minPrice": 88.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Recovery Compass",
+        "minPrice": 107.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Allay Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Frog Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Tadpole Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Warden Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Piglin Head",
+        "minPrice": -1.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Pitcher Pod",
+        "minPrice": 2.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Torchflower Seed",
+        "minPrice": 2.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : Relic",
+        "minPrice": 20.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Netherite Upgrade",
+        "minPrice": 132.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Coast Armor Trim",
+        "minPrice": 25.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Dune Armor Trim",
+        "minPrice": 28.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Eye Armor Trim",
+        "minPrice": 30.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Host Armor Trim",
+        "minPrice": 35.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Raiser Armor Trim",
+        "minPrice": 35.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Rib Armor Trim",
+        "minPrice": 46.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Sentry Armor Trim",
+        "minPrice": 22.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Shaper Armor Trim",
+        "minPrice": 35.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Silence Armor Trim",
+        "minPrice": 58.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Snout Armor Trim",
+        "minPrice": 49.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Spire Armor Trim",
+        "minPrice": 60.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Tide Armor Trim",
+        "minPrice": 27.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Vex Armor Trim",
+        "minPrice": 72.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Ward Armor Trim",
+        "minPrice": 89.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Wayfinder Armor Trim",
+        "minPrice": 35.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Wild Armor Trim",
+        "minPrice": 18.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Angler Pottery Sherd",
+        "minPrice": 5.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Archer Pottery Sherd",
+        "minPrice": 2.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Arms Up Pottery Sherd",
+        "minPrice": 1.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Blade Pottery Sherd",
+        "minPrice": 5.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Brewer Pottery Sherd",
+        "minPrice": 1.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Burn Pottery Sherd",
+        "minPrice": 4.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Danger Pottery Sherd",
+        "minPrice": 4.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Explorer Pottery Sherd",
+        "minPrice": 5.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Friend Pottery Sherd",
+        "minPrice": 4.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Heart Pottery Sherd",
+        "minPrice": 4.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Heartbreak Pottery Sherd",
+        "minPrice": 4.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Howl Pottery Sherd",
+        "minPrice": 4.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Miner Pottery Sherd",
+        "minPrice": 2.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Mourner Pottery Sherd",
+        "minPrice": 5.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Plenty Pottery Sherd",
+        "minPrice": 5.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Prize Pottery Sherd",
+        "minPrice": 2.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Sheaf Pottery Sherd",
+        "minPrice": 4.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Shelter Pottery Sherd",
+        "minPrice": 5.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Skull Pottery Sherd",
+        "minPrice": 2.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Snort Pottery Sherd",
+        "minPrice": 5.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Camel Spawn Egg",
+        "minPrice": 0.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Sniffer Spawn Egg",
+        "minPrice": 0.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Sniffer Egg",
+        "minPrice": 24.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Heavy Core",
+        "minPrice": 3640.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Ominous Trial Spawner",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Ominous Vault",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Trial Spawner",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Vault",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Flow Banner Pattern",
+        "minPrice": 70.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Guster Banner Pattern",
+        "minPrice": 260.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Breeze Rod",
+        "minPrice": 3.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : Precipice",
+        "minPrice": 16.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : Creator",
+        "minPrice": 16.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Music Disc : Crator (Music Box)",
+        "minPrice": 16.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Ominous Bottle",
+        "minPrice": 19.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Ominous Trial Key",
+        "minPrice": 184.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Flow Pottery Sherd",
+        "minPrice": 6.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Guster Pottery Sherd",
+        "minPrice": 6.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Scrape Pottery Sherd",
+        "minPrice": 6.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Bolt Armor Trim",
+        "minPrice": 84.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Flow Armor Trim",
+        "minPrice": 84.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Bogged Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Breeze Spawn Egg",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Trial Explorer Map",
+        "minPrice": 272.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Trial Key",
+        "minPrice": 124.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Wind Charge",
+        "minPrice": 1.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Apple",
+        "minPrice": 1.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Mushroom Stew",
+        "minPrice": 4.05,
+        "max_stack": 1
+    },
+    {
+        "name": "Bread",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Raw Porkchop",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Cooked Porkchop",
+        "minPrice": 1.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Golden Apple",
+        "minPrice": 67.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Enchanted Golden Apple",
+        "minPrice": 693.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Raw Cod",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Raw Salmon",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Tropical Fish",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Pufferfish",
+        "minPrice": 1.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Cooked Cod",
+        "minPrice": 0.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Cooked Salmon",
+        "minPrice": 1.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Cake",
+        "minPrice": 12.75,
+        "max_stack": 1
+    },
+    {
+        "name": "Cookie",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Melon Slice",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Dried Kelp",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Raw Beef",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Steak",
+        "minPrice": 2.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Raw Chicken",
+        "minPrice": 0.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Cooked Chicken",
+        "minPrice": 0.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Rotten Flesh",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Spider Eye",
+        "minPrice": 0.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Carrot",
+        "minPrice": 0.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Potato",
+        "minPrice": 0.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Baked Potato",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Poisonous Potato",
+        "minPrice": 0.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Pumpkin Pie",
+        "minPrice": 4.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Raw Rabbit",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Cooked Rabbit",
+        "minPrice": 1.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Rabbit Stew",
+        "minPrice": 9.3,
+        "max_stack": 1
+    },
+    {
+        "name": "Raw Mutton",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Cooked Mutton",
+        "minPrice": 0.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Beetroot",
+        "minPrice": 0.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Beetroot Soup",
+        "minPrice": 1.1,
+        "max_stack": 1
+    },
+    {
+        "name": "Sweet Berries",
+        "minPrice": 0.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Glow Berries",
+        "minPrice": 5.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Honey Bottle",
+        "minPrice": 12.0,
+        "max_stack": 16
+    },
+    {
+        "name": "Iron Shovel",
+        "minPrice": 7.35,
+        "max_stack": 1
+    },
+    {
+        "name": "Iron Pickaxe",
+        "minPrice": 21.75,
+        "max_stack": 1
+    },
+    {
+        "name": "Iron Axe",
+        "minPrice": 21.75,
+        "max_stack": 1
+    },
+    {
+        "name": "Flint and Steel",
+        "minPrice": 9.8,
+        "max_stack": 1
+    },
+    {
+        "name": "Wooden Shovel",
+        "minPrice": 0.6,
+        "max_stack": 1
+    },
+    {
+        "name": "Wooden Pickaxe",
+        "minPrice": 1.5,
+        "max_stack": 1
+    },
+    {
+        "name": "Wooden Axe",
+        "minPrice": 1.5,
+        "max_stack": 1
+    },
+    {
+        "name": "Stone Shovel",
+        "minPrice": 0.6,
+        "max_stack": 1
+    },
+    {
+        "name": "Stone Pickaxe",
+        "minPrice": 1.5,
+        "max_stack": 1
+    },
+    {
+        "name": "Stone Axe",
+        "minPrice": 1.5,
+        "max_stack": 1
+    },
+    {
+        "name": "Diamond Shovel",
+        "minPrice": 16.7,
+        "max_stack": 1
+    },
+    {
+        "name": "Diamond Pickaxe",
+        "minPrice": 49.7,
+        "max_stack": 1
+    },
+    {
+        "name": "Diamond Axe",
+        "minPrice": 49.7,
+        "max_stack": 1
+    },
+    {
+        "name": "Gold Shovel",
+        "minPrice": 6.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Gold Pickaxe",
+        "minPrice": 18.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Gold Axe",
+        "minPrice": 18.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Netherite Shovel",
+        "minPrice": 102.7,
+        "max_stack": 1
+    },
+    {
+        "name": "Netherite Pickaxe",
+        "minPrice": 120.65,
+        "max_stack": 1
+    },
+    {
+        "name": "Netherite Axe",
+        "minPrice": 120.65,
+        "max_stack": 1
+    },
+    {
+        "name": "Wooden Hoe",
+        "minPrice": 1.05,
+        "max_stack": 1
+    },
+    {
+        "name": "Stone Hoe",
+        "minPrice": 1.05,
+        "max_stack": 1
+    },
+    {
+        "name": "Iron Hoe",
+        "minPrice": 14.55,
+        "max_stack": 1
+    },
+    {
+        "name": "Diamond Hoe",
+        "minPrice": 33.2,
+        "max_stack": 1
+    },
+    {
+        "name": "Gold Hoe",
+        "minPrice": 12.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Netherite Hoe",
+        "minPrice": 102.5,
+        "max_stack": 1
+    },
+    {
+        "name": "Compass",
+        "minPrice": 29.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Fishing Rod",
+        "minPrice": 0.65,
+        "max_stack": 1
+    },
+    {
+        "name": "Clock",
+        "minPrice": 24.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Shears",
+        "minPrice": 14.4,
+        "max_stack": 1
+    },
+    {
+        "name": "Lead",
+        "minPrice": 1.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Spyglass",
+        "minPrice": 7.2,
+        "max_stack": 1
+    },
+    {
+        "name": "Name Tag",
+        "minPrice": 0.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Brush",
+        "minPrice": 1.7,
+        "max_stack": 1
+    },
+    {
+        "name": "Turtle Shell",
+        "minPrice": 9.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Bow",
+        "minPrice": 0.85,
+        "max_stack": 1
+    },
+    {
+        "name": "Arrow",
+        "minPrice": 0.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Spectral Arrow",
+        "minPrice": 0.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Night Vision (0:22)",
+        "minPrice": 8.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Night Vision (1:00)",
+        "minPrice": 8.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of invisibility (0:22)",
+        "minPrice": 8.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of invisibility (1:00)",
+        "minPrice": 8.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Leaping (0:22)",
+        "minPrice": 8.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Leaping (1:00)",
+        "minPrice": 8.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Leaping 2 (0:11)",
+        "minPrice": 8.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Fire Resistance (0:22)",
+        "minPrice": 8.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Fire Resistance (1:00)",
+        "minPrice": 8.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Swiftness (0:22)",
+        "minPrice": 6.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Swiftness (1:00)",
+        "minPrice": 7.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Swiftness 2 (0:11)",
+        "minPrice": 7.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Slowness (0:11)",
+        "minPrice": 7.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Slowness (0:30)",
+        "minPrice": 7.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Slowness 4 (0:02)",
+        "minPrice": 7.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Turtle master (0:02)",
+        "minPrice": 7.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Turtle master (0:05)",
+        "minPrice": 8.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Turtle Master 2 (0:02)",
+        "minPrice": 7.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Breathing (0:22)",
+        "minPrice": 7.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Breathing (1:00)",
+        "minPrice": 7.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Healing",
+        "minPrice": 7.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow healing 2",
+        "minPrice": 7.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Harming",
+        "minPrice": 7.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Harming 2",
+        "minPrice": 7.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Poison (0:05)",
+        "minPrice": 6.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Poison (0:11)",
+        "minPrice": 7.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Poison (0:02)",
+        "minPrice": 7.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Regeneration (0:05)",
+        "minPrice": 7.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Regeneration (0:11)",
+        "minPrice": 7.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Regeneration 2 (0:02)",
+        "minPrice": 7.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Strength (0:22)",
+        "minPrice": 8.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Strength (1:00)",
+        "minPrice": 8.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Strength 2 (0:11)",
+        "minPrice": 8.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Weakness (0:11)",
+        "minPrice": 7.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Weakness (0:30)",
+        "minPrice": 7.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Luck (0:37)",
+        "minPrice": 6.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Slow Falling (0:11)",
+        "minPrice": 0.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Slow Falling (0:30)",
+        "minPrice": 0.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Iron Sword",
+        "minPrice": 14.45,
+        "max_stack": 1
+    },
+    {
+        "name": "Wooden Sword",
+        "minPrice": 0.45,
+        "max_stack": 1
+    },
+    {
+        "name": "Stone Sword",
+        "minPrice": 0.95,
+        "max_stack": 1
+    },
+    {
+        "name": "Diamond Sword",
+        "minPrice": 33.1,
+        "max_stack": 1
+    },
+    {
+        "name": "Golden Sword",
+        "minPrice": 12.1,
+        "max_stack": 1
+    },
+    {
+        "name": "Netherite Sword",
+        "minPrice": 102.4,
+        "max_stack": 1
+    },
+    {
+        "name": "Leather Cap",
+        "minPrice": 4.5,
+        "max_stack": 1
+    },
+    {
+        "name": "Leather Tunic",
+        "minPrice": 7.2,
+        "max_stack": 1
+    },
+    {
+        "name": "Leather Pants",
+        "minPrice": 6.3,
+        "max_stack": 1
+    },
+    {
+        "name": "Leather Boots",
+        "minPrice": 3.6,
+        "max_stack": 1
+    },
+    {
+        "name": "Chainmail Helmet",
+        "minPrice": 26.4,
+        "max_stack": 1
+    },
+    {
+        "name": "Chainmail Chestplate",
+        "minPrice": 41.8,
+        "max_stack": 1
+    },
+    {
+        "name": "Chainmail Leggings",
+        "minPrice": 36.3,
+        "max_stack": 1
+    },
+    {
+        "name": "Chainmail Boots",
+        "minPrice": 20.9,
+        "max_stack": 1
+    },
+    {
+        "name": "Iron Helmet",
+        "minPrice": 40.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Iron Chestplate",
+        "minPrice": 64.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Iron Leggings",
+        "minPrice": 56.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Iron Boots",
+        "minPrice": 32.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Diamond Helmet",
+        "minPrice": 82.5,
+        "max_stack": 1
+    },
+    {
+        "name": "Diamond Chestplate",
+        "minPrice": 132.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Diamond Leggings",
+        "minPrice": 115.5,
+        "max_stack": 1
+    },
+    {
+        "name": "Diamond Boots",
+        "minPrice": 66.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Gold Helmet",
+        "minPrice": 30.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Gold Chestplate",
+        "minPrice": 48.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Gold Leggings",
+        "minPrice": 42.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Gold Boots",
+        "minPrice": 24.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Netherite Helmet",
+        "minPrice": 156.75,
+        "max_stack": 1
+    },
+    {
+        "name": "Netherite Chestplate",
+        "minPrice": 211.2,
+        "max_stack": 1
+    },
+    {
+        "name": "Netherite Leggings",
+        "minPrice": 193.05,
+        "max_stack": 1
+    },
+    {
+        "name": "Netherite Boots",
+        "minPrice": 138.6,
+        "max_stack": 1
+    },
+    {
+        "name": "Shield",
+        "minPrice": 8.4,
+        "max_stack": 1
+    },
+    {
+        "name": "Totem of Undying",
+        "minPrice": 100.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Trident",
+        "minPrice": 120.0,
+        "max_stack": 1
+    },
+    {
+        "name": "Crossbow",
+        "minPrice": 15.35,
+        "max_stack": 1
+    },
+    {
+        "name": "Arrow of Infestation",
+        "minPrice": 11.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Oozing",
+        "minPrice": 11.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Weaving",
+        "minPrice": 10.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Arrow of Wind Charging",
+        "minPrice": 11.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Mace",
+        "minPrice": 3279.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Ghast Tear",
+        "minPrice": 2.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Water Bottle",
+        "minPrice": 0.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Mudane Potion",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Thick Potion",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Awkward Potion",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Night Vision (3:00)",
+        "minPrice": 12.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Night Vision (8:00)",
+        "minPrice": 13.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Invisibility (3:00)",
+        "minPrice": 13.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Invisibility (8:00)",
+        "minPrice": 14.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Jump Boost (3:00)",
+        "minPrice": 10.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Jump Boost (8:00)",
+        "minPrice": 11.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Jump Boost 2 (3:00)",
+        "minPrice": 11.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Fire Resistance (3:00)",
+        "minPrice": 15.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Fire Resistance (8:00)",
+        "minPrice": 16.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Speed (3:00)",
+        "minPrice": 0.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Speed (8:00)",
+        "minPrice": 1.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Speed 2 (3:00)",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Slowness (3:00)",
+        "minPrice": 2.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Slowness (8:00)",
+        "minPrice": 2.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Slowness 4 (3:00)",
+        "minPrice": 2.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of the Turtle Master (0:20)",
+        "minPrice": 9.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of the Turtle Master (0:40)",
+        "minPrice": 10.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of the Turtle Master 2 (0:20)",
+        "minPrice": 10.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Water Breathing (3:00)",
+        "minPrice": 1.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Water Breathing (8:00)",
+        "minPrice": 2.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Healing",
+        "minPrice": 5.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Healing 2",
+        "minPrice": 5.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Harming",
+        "minPrice": 6.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Harming 2",
+        "minPrice": 7.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Poison (0:45)",
+        "minPrice": 0.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Poison (1:30)",
+        "minPrice": 1.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Poison (0:21)",
+        "minPrice": 1.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Regeneration (0:45)",
+        "minPrice": 2.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Regeneration (1:30)",
+        "minPrice": 3.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Regeneration 2 (0:22)",
+        "minPrice": 3.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Strengh (3:00)",
+        "minPrice": 12.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Strengh (8:00)",
+        "minPrice": 13.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Strengh 2 (3:00)",
+        "minPrice": 12.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Weakness (1:30)",
+        "minPrice": 1.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Weakness (4:00)",
+        "minPrice": 2.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Luck",
+        "minPrice": 3.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Slow Falling (1:30)",
+        "minPrice": 10.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Slow Falling (4:00)",
+        "minPrice": 11.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Glass Bottle",
+        "minPrice": 0.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Fermented Spider Eye",
+        "minPrice": 1.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Blaze Powder",
+        "minPrice": 11.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Magma Cream",
+        "minPrice": 15.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Brewing Stand",
+        "minPrice": 25.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Cauldron",
+        "minPrice": 50.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Glistering Melon Slice",
+        "minPrice": 4.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Golden Carrot",
+        "minPrice": 11.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Rabbit's Foot",
+        "minPrice": 10.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Dragon's Breath",
+        "minPrice": 56.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Water Bottle",
+        "minPrice": 2.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Mudane Splash Potion",
+        "minPrice": 2.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Thick Splash Potion",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Awkward Splash Potion",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Night Vision (3:00)",
+        "minPrice": 14.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Night Vision (8:00)",
+        "minPrice": 15.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Invisibility (3:00)",
+        "minPrice": 15.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Invisibility (8:00)",
+        "minPrice": 16.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Jump Boost (3:00)",
+        "minPrice": 12.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Jump Boost (8:00)",
+        "minPrice": 13.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Jump Boost 2 (3:00)",
+        "minPrice": 13.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Fire Resistance (3:00)",
+        "minPrice": 18.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Fire Resistance (8:00)",
+        "minPrice": 18.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Speed (3:00)",
+        "minPrice": 3.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Speed (8:00)",
+        "minPrice": 3.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Speed 2 (3:00)",
+        "minPrice": 3.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Slowness (3:00)",
+        "minPrice": 4.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Slowness (8:00)",
+        "minPrice": 4.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Slowness 4 (3:00)",
+        "minPrice": 4.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of the Turtle Master (0:20)",
+        "minPrice": 11.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of the Turtle Master (0:40)",
+        "minPrice": 12.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of the Turtle Master 2 (0:20)",
+        "minPrice": 12.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Water Breathing (3:00)",
+        "minPrice": 3.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Water Breathing (8:00)",
+        "minPrice": 4.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Healing",
+        "minPrice": 7.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Healing 2",
+        "minPrice": 8.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Harming",
+        "minPrice": 8.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Harming 2",
+        "minPrice": 9.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Poison (0:45)",
+        "minPrice": 3.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Poison (1:30)",
+        "minPrice": 3.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Poison (0:21)",
+        "minPrice": 3.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Regeneration (0:45)",
+        "minPrice": 5.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Regeneration (1:30)",
+        "minPrice": 5.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Regeneration 2 (0:22)",
+        "minPrice": 5.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Strengh (3:00)",
+        "minPrice": 14.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Strengh (8:00)",
+        "minPrice": 15.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Strengh 2 (3:00)",
+        "minPrice": 15.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Weakness (1:30)",
+        "minPrice": 4.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Weakness (4:00)",
+        "minPrice": 4.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Luck",
+        "minPrice": 5.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Slow Falling (1:30)",
+        "minPrice": 13.1,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Slow Falling (4:00)",
+        "minPrice": 13.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Water Bottle",
+        "minPrice": 56.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Mudane Lingering Potion",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Thick Lingering Potion",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Awkward Lingering Potion",
+        "minPrice": -1.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Night Vision (3:00)",
+        "minPrice": 68.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Night Vision (8:00)",
+        "minPrice": 69.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Invisibility (3:00)",
+        "minPrice": 69.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Invisibility (8:00)",
+        "minPrice": 70.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Jump Boost (3:00)",
+        "minPrice": 66.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Jump Boost (8:00)",
+        "minPrice": 67.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Jump Boost 2 (3:00)",
+        "minPrice": 67.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Fire Resistance (3:00)",
+        "minPrice": 72.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Fire Resistance (8:00)",
+        "minPrice": 72.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Speed (3:00)",
+        "minPrice": 57.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Speed (8:00)",
+        "minPrice": 57.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Speed 2 (3:00)",
+        "minPrice": 57.35,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Slowness (3:00)",
+        "minPrice": 58.2,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Slowness (8:00)",
+        "minPrice": 58.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Slowness 4 (3:00)",
+        "minPrice": 58.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of the Turtle Master (0:20)",
+        "minPrice": 65.85,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of the Turtle Master (0:40)",
+        "minPrice": 66.4,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of the Turtle Master 2 (0:20)",
+        "minPrice": 66.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Water Breathing (3:00)",
+        "minPrice": 57.95,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Water Breathing (8:00)",
+        "minPrice": 58.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Healing",
+        "minPrice": 61.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Healing 2",
+        "minPrice": 62.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Harming",
+        "minPrice": 62.9,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Harming 2",
+        "minPrice": 63.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Poison (0:45)",
+        "minPrice": 57.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Poison (1:30)",
+        "minPrice": 57.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Poison (0:21)",
+        "minPrice": 57.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Regeneration (0:45)",
+        "minPrice": 59.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Regeneration (1:30)",
+        "minPrice": 59.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Regeneration 2 (0:22)",
+        "minPrice": 59.3,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Strengh (3:00)",
+        "minPrice": 68.7,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Strengh (8:00)",
+        "minPrice": 69.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Strengh 2 (3:00)",
+        "minPrice": 69.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Weakness (1:30)",
+        "minPrice": 58.05,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Weakness (4:00)",
+        "minPrice": 58.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Luck",
+        "minPrice": 56.15,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Slow Falling (1:30)",
+        "minPrice": 1.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Slow Falling (4:00)",
+        "minPrice": 3.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Phantom Membrane",
+        "minPrice": 15.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Infestation",
+        "minPrice": 1.25,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Oozing",
+        "minPrice": 5.6,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Weaving",
+        "minPrice": 1.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Potion of Wind Charging",
+        "minPrice": 4.55,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Infestation",
+        "minPrice": 3.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Oozing",
+        "minPrice": 7.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Weaving",
+        "minPrice": 3.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Splash Potion of Wind Charging",
+        "minPrice": 6.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Infestation",
+        "minPrice": 57.45,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Oozing",
+        "minPrice": 61.8,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Weaving",
+        "minPrice": 57.65,
+        "max_stack": 64
+    },
+    {
+        "name": "Lingering Potion of Wind Charging",
+        "minPrice": 60.75,
+        "max_stack": 64
+    },
+    {
+        "name": "Water",
+        "minPrice": 0.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Lava",
+        "minPrice": 11.0,
+        "max_stack": 64
+    },
+    {
+        "name": "Milk",
+        "minPrice": 0.5,
+        "max_stack": 64
+    },
+    {
+        "name": "Suspicious Stew",
+        "minPrice": 4.7,
+        "max_stack": 1
+    }
+]
