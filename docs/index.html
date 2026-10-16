@@ -80,7 +80,14 @@
 
 				<div id="rows-container">
 					<div v-for="(row, index) in rows" :key="index" class="grid grid-cols-2 sm:grid-cols-[3fr_1fr_1fr_auto] gap-2.5 mb-2.5 items-center">
-						<input type="text" list="items-list" v-model="row.name" class="item-search p-2.5 border border-atlas-line rounded-lg text-[14px] outline-none focus:border-atlas-green" placeholder="Chercher un matériau...">
+						<input
+							type="text"
+							list="items-list"
+							v-model="row.name"
+							@focus="if (!row.name) { const val = row.name; row.name = ' '; row.name = val; }"
+							class="item-search p-2.5 border border-atlas-line rounded-lg text-[14px] outline-none focus:border-atlas-green"
+							placeholder="Chercher un matériau..."
+						>
 						<input type="number" min="1" v-model.number="row.qty" placeholder="Qté" class="p-2.5 border border-atlas-line rounded-lg text-[14px] outline-none focus:border-atlas-green">
 						<input type="text" :value="getRowPrice(row)" disabled class="p-2.5 border border-atlas-line rounded-lg text-[14px] bg-[#eef1ec]">
 						<button class="bg-[#ffebe9] text-[#da3633] border-none w-[38px] h-[38px] rounded-lg cursor-pointer font-bold hover:bg-[#ffdce0] transition" @click="removeRow(index)">X</button>
@@ -118,8 +125,7 @@
 
 					<div class="mb-4">
 						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Durée de location (mois)</label>
-						<input type="number" v-model.number="months" min="1"
-							class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
+						<input type="number" v-model.number="months" min="1" class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
 					</div>
 
 					<div class="mb-4">
