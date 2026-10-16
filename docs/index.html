@@ -172,13 +172,14 @@
 
 				async init() {
 					try {
-						const response = await fetch('/atlas/economie_items.json');
+						const response = await fetch('./economie_items.json');
 						if (!response.ok) throw new Error('Erreur réseau');
 						this.items = await response.json();
-						this.addRow();
 					} catch (error) {
 						console.error(error);
 						alert('Impossible de charger le catalogue de matériaux.');
+					} finally {
+						this.addRow();
 					}
 				},
 
