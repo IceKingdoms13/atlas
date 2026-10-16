@@ -35,18 +35,14 @@
 
 <body class="bg-atlas-bg text-atlas-ink font-sans pb-[50px] m-0 min-h-screen" v-scope="app()">
 
-	<datalist id="items-list">
-		<option v-for="item in sortedItems" :value="item.name" :label="item.minPrice + ' €'"></option>
-	</datalist>
-
 	<header class="bg-gradient-to-br from-atlas-green to-[#4d9e42] text-white">
 		<div class="max-w-[1180px] mx-auto px-[18px] py-[22px] flex items-center gap-[18px]">
 			<div class="w-[76px] h-[76px] bg-white rounded-2xl flex items-center justify-center overflow-hidden flex-shrink-0">
 				<img class="max-w-full max-h-full object-contain" src="/atlas/logo.png" alt="Logo Atlas Extraction">
 			</div>
-			<div class="brand">
+			<div>
 				<h1 class="m-0 text-[27px] tracking-[.2px]">Atlas Extraction</h1>
-				<p class="mt-1 mb-0 opacity-85 text-[14px] leading-snug">Vente de ressources et matériaux de constructions pour vos plus beaux projets<br> Système de devis & Logistique — 2 Impasse de Brunehilde, Traumheim</p>
+				<p class="mt-1 mb-0 opacity-85 text-[14px] leading-snug">Vente de ressources et matériaux de constructions<br>Système de devis & Logistique — 2 Impasse de Brunehilde, Traumheim</p>
 			</div>
 		</div>
 	</header>
@@ -58,27 +54,27 @@
 				<div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
 					<div class="mb-4">
 						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Client / Entreprise</label>
-						<input type="text" v-model="client" placeholder="Nom du client" class="w-11/12 px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none transition border duration-200 focus:border-atlas-green">
+						<input type="text" v-model="client" placeholder="Nom du client" class="w-11/12 px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
 					</div>
 					<div class="mb-4">
 						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Projet / Chantier</label>
-						<input type="text" v-model="project" placeholder="Ex: Construction Mairie" class="w-11/12 px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none transition border duration-200 focus:border-atlas-green">
+						<input type="text" v-model="project" placeholder="Ex: Construction Mairie" class="w-11/12 px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
 					</div>
 				</div>
 				<div class="mb-4">
 					<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Adresse de livraison</label>
-					<input type="text" v-model="note" placeholder="Coordonnées, rue, ville, accès spécifique..." class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none transition border duration-200 focus:border-atlas-green">
+					<input type="text" v-model="note" placeholder="Coordonnées, rue, ville, accès spécifique..." class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
 				</div>
 			</div>
 
 			<div class="bg-white rounded-2xl p-6 shadow-atlas mb-6">
 				<h2 class="mt-0 text-[18px] border-b-2 border-atlas-line pb-3 mb-5 text-atlas-green">Matériaux & Ressources</h2>
 
-				<div id="rows-container">
+				<div>
 					<div v-for="(row, index) in rows" :key="index" class="grid grid-cols-2 sm:grid-cols-[3fr_1fr_1fr_auto] gap-2.5 mb-2.5 items-center">
-						<select v-model="row.name" class="item-search p-2.5 border border-atlas-line rounded-lg text-[14px] outline-none focus:border-atlas-green bg-white">
-							<option value="" disabled selected>Choisir un matériau...</option>
-							<option v-for="item in sortedItems" :value="item.name">
+						<select v-model="row.name" class="p-2.5 border border-atlas-line rounded-lg text-[14px] outline-none focus:border-atlas-green bg-white">
+							<option value="" disabled>Choisir un matériau...</option>
+							<option v-for="item in sortedItems" :key="item.name" :value="item.name">
 								{{ item.name }} ({{ item.minPrice }} €)
 							</option>
 						</select>
@@ -97,22 +93,21 @@
 				<h2 class="mt-0 text-[18px] border-b-2 border-atlas-line pb-3 mb-5 text-atlas-green">Service & Logistique</h2>
 
 				<div class="flex flex-col gap-2.5">
-					<label class="flex items-center gap-2.5 p-3 border border-atlas-line rounded-lg cursor-pointer transition hover:border-atlas-light hover:bg-[#fdfefc]">
+					<label class="flex items-center gap-2.5 p-3 border border-atlas-line rounded-lg cursor-pointer transition hover:border-atlas-light">
 						<input type="radio" name="service" value="livraison" v-model="service" class="accent-atlas-green scale-125"> <b>Livraison</b> (Shulkers obligatoires)
 					</label>
-					<label class="flex items-center gap-2.5 p-3 border border-atlas-line rounded-lg cursor-pointer transition hover:border-atlas-light hover:bg-[#fdfefc]">
+					<label class="flex items-center gap-2.5 p-3 border border-atlas-line rounded-lg cursor-pointer transition hover:border-atlas-light">
 						<input type="radio" name="service" value="depot" v-model="service" class="accent-atlas-green scale-125"> <b>Dépôt à Traumheim</b>
 					</label>
-					<label class="flex items-center gap-2.5 p-3 border border-atlas-line rounded-lg cursor-pointer transition hover:border-atlas-light hover:bg-[#fdfefc]">
+					<label class="flex items-center gap-2.5 p-3 border border-atlas-line rounded-lg cursor-pointer transition hover:border-atlas-light">
 						<input type="radio" name="service" value="location" v-model="service" class="accent-atlas-green scale-125"> <b>Location Shulkers seule</b>
 					</label>
 				</div>
 
-				<div class="bg-[#f9fbf8] border border-atlas-line p-4 rounded-lg mt-4" id="shulker-panel">
+				<div class="bg-[#f9fbf8] border border-atlas-line p-4 rounded-lg mt-4">
 					<div class="mb-4" v-show="service === 'depot'">
 						<label class="flex items-center gap-2 text-[13px] font-semibold text-atlas-muted cursor-pointer">
-							<input type="checkbox" v-model="useShulkers" class="accent-atlas-green">
-							Emballer dans des Shulkers louées
+							<input type="checkbox" v-model="useShulkers" class="accent-atlas-green"> Emballer dans des Shulkers louées
 						</label>
 					</div>
 
@@ -127,7 +122,7 @@
 					</div>
 
 					<div class="mb-4">
-						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Forcer le nombre de Shulkers (laisser vide pour auto)</label>
+						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Forcer le nombre de Shulkers</label>
 						<input type="number" v-model.number="shulkerForce" placeholder="Auto" min="0" class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
 					</div>
 				</div>
@@ -143,18 +138,14 @@
 				<div class="flex justify-between mb-3 text-[20px] font-extrabold text-atlas-green border-t-2 border-atlas-line pt-4 mt-4">
 					<span>TOTAL À PAYER</span><span>{{ formatMoney(total) }}</span>
 				</div>
-				<div class="flex justify-between text-atlas-muted text-[13px] font-normal -mt-2 mb-3">
-					<span class="text-right w-full">Dont <span v-text="formatMoney(sumDep)"></span> restituables </span>
-				</div>
-
-				<button class="bg-atlas-green text-white border-none py-3.5 px-4 rounded-lg cursor-pointer font-bold text-[16px] w-full mt-5 transition hover:bg-[#2c6e2b] hover:shadow-atlas-hover" @click="copyRequest">Générer & Copier le Devis</button>
+				<button class="bg-atlas-green text-white border-none py-3.5 px-4 rounded-lg cursor-pointer font-bold text-[16px] w-full mt-5 transition hover:bg-[#2c6e2b]" @click="copyRequest">Copier le Devis</button>
 			</div>
 		</div>
 	</div>
 
 	<script>
 		function app() {
-			const self = {
+			return {
 				client: '',
 				project: '',
 				note: '',
@@ -163,7 +154,7 @@
 				months: 1,
 				shulkerForce: '',
 				items: [],
-				rows: [],
+				rows: [{ name: '', qty: 1 }],
 
 				async loadItems() {
 					try {
@@ -172,12 +163,6 @@
 						this.items = await response.json();
 					} catch (error) {
 						console.error(error);
-						alert('Impossible de charger le catalogue de matériaux.');
-					} finally {
-						console.log(this.items)
-						if (this.rows.length === 0) {
-							this.addRow();
-						}
 					}
 				},
 
@@ -189,15 +174,13 @@
 
 				getItemData(name) {
 					if (!name) return null;
-					const search = name.trim().toLowerCase();
-					return this.items.find(i => i.name.toLowerCase() === search);
+					return this.items.find(i => i.name.toLowerCase() === name.trim().toLowerCase());
 				},
 
 				getRowPrice(row) {
 					const item = this.getItemData(row.name);
-					if (!item) return '';
-					const total = (item.minPrice || 0) * (row.qty || 0);
-					return total.toFixed(2) + ' €';
+					if (!item) return '0.00 €';
+					return ((item.minPrice || 0) * (row.qty || 0)).toFixed(2) + ' €';
 				},
 
 				addRow() {
@@ -206,45 +189,30 @@
 
 				removeRow(index) {
 					this.rows.splice(index, 1);
-					if (this.rows.length === 0) {
-						this.addRow();
-					}
+					if (this.rows.length === 0) this.addRow();
 				},
 
 				get totalMat() {
 					if (this.service === 'location') return 0;
-					let sum = 0;
-					for (const row of this.rows) {
+					return this.rows.reduce((sum, row) => {
 						const item = this.getItemData(row.name);
-						if (item) {
-							sum += (item.minPrice || 0) * (row.qty || 0);
-						}
-					}
-					return sum;
+						return sum + (item ? (item.minPrice || 0) * (row.qty || 0) : 0);
+					}, 0);
 				},
 
 				get totalSlots() {
-					let slots = 0;
-					for (const row of this.rows) {
+					return this.rows.reduce((slots, row) => {
 						const item = this.getItemData(row.name);
-						if (item) {
-							const qty = row.qty || 0;
-							const maxStack = item.max_stack || 64;
-							slots += Math.ceil(qty / maxStack);
-						}
-					}
-					return slots;
-				},
-
-				get needsShulkers() {
-					if (this.service === 'livraison') return true;
-					if (this.service === 'depot') return this.useShulkers;
-					return false;
+						if (!item) return slots;
+						return slots + Math.ceil((row.qty || 0) / (item.max_stack || 64));
+					}, 0);
 				},
 
 				get shulkerEst() {
-					if (!this.needsShulkers || this.totalSlots === 0) return 0;
-					return Math.ceil(this.totalSlots / 27);
+					if ((this.service === 'livraison' || (this.service === 'depot' && this.useShulkers)) && this.totalSlots > 0) {
+						return Math.ceil(this.totalSlots / 27);
+					}
+					return 0;
 				},
 
 				get finalShulkers() {
@@ -283,39 +251,15 @@
 				},
 
 				copyRequest() {
-					let itemsText = "";
-					for (const row of this.rows) {
-						if (row.name.trim()) {
-							itemsText += `- ${row.qty}x ${row.name}\n`;
-						}
-					}
+					let itemsText = this.rows.filter(r => r.name.trim()).map(r => `- ${r.qty}x ${r.name}`).join('\n');
+					let text = `*** Devis Atlas Extraction ***\n\nClient : ${this.client || 'Non renseigné'}\nProjet : ${this.project || 'Non renseigné'}\n\nRessources demandées :\n${itemsText || 'Aucune'}\n\nTotal estimé : ${this.formatMoney(this.total)}`;
+					navigator.clipboard.writeText(text).then(() => alert('Devis copié !'));
+				},
 
-					let text =
-						`*** Devis Atlas Extraction ***\n\n` +
-						`Client : ${this.client || 'Non renseigné'}\n` +
-						`Projet : ${this.project || 'Non renseigné'}\n\n` +
-						`Ressources demandées :\n` +
-						`${itemsText || 'Aucune (Location seule)'}\n\n` +
-						`Résumé financier :\n` +
-						`Matériaux (HT) : ${this.formatMoney(this.totalMat)}\n` +
-						`Frais de Livraison : ${this.formatMoney(this.sumDel)}\n` +
-						`Location : ${this.formatMoney(this.sumRent)}\n` +
-						`Taxes : ${this.formatMoney(this.sumTax)}\n` +
-						`Caution : ${this.formatMoney(this.sumDep)}\n\n` +
-						`Total estimé (TTC + Caution) : ${this.formatMoney(this.total)}\n` +
-						`Dont ${this.formatMoney(this.sumDep)} restituable`;
-
-					navigator.clipboard.writeText(text).then(() => {
-						alert('Le devis a bien été copié dans le presse-papier !');
-					}).catch(() => {
-						alert('Erreur lors de la copie.');
-					});
+				init() {
+					this.loadItems();
 				}
-			};
-
-			// Automatically fire the fetch call on instantiation
-			self.loadItems();
-			return self;
+			}
 		}
 	</script>
 </body>
