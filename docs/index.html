@@ -8,6 +8,7 @@
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script>
 		tailwind.config = {
+			darkMode: 'class',
 			theme: {
 				extend: {
 					colors: {
@@ -32,92 +33,97 @@
 	</script>
 </head>
 
-<body class="bg-atlas-bg text-atlas-ink font-sans pb-[50px] m-0 min-h-screen">
+<body class="bg-atlas-bg text-atlas-ink dark:bg-zinc-950 dark:text-zinc-100 font-sans pb-[50px] m-0 min-h-screen transition-colors duration-200">
 
 	<header class="bg-gradient-to-br from-atlas-green to-[#4d9e42] text-white">
-		<div class="max-w-[1180px] mx-auto px-[18px] py-[22px] flex items-center gap-[18px]">
-			<div class="w-[76px] h-[76px] bg-white rounded-2xl flex items-center justify-center overflow-hidden flex-shrink-0">
-				<img class="max-w-full max-h-full object-contain" src="/atlas/logo.png" alt="Logo Atlas Extraction">
+		<div class="max-w-[1180px] mx-auto px-[18px] py-[22px] flex items-center justify-between gap-[18px]">
+			<div class="flex items-center gap-[18px]">
+				<div class="w-[76px] h-[76px] bg-white rounded-2xl flex items-center justify-center overflow-hidden flex-shrink-0">
+					<img class="max-w-full max-h-full object-contain" src="/atlas/logo.png" alt="Logo Atlas Extraction">
+				</div>
+				<div>
+					<h1 class="m-0 text-[27px] tracking-[.2px]">Atlas Extraction</h1>
+					<p class="mt-1 mb-0 opacity-85 text-[14px] leading-snug">Vente de ressources et matériaux de constructions<br>Système de devis & Logistique — 2 Impasse de Brunehilde, Traumheim</p>
+				</div>
 			</div>
-			<div>
-				<h1 class="m-0 text-[27px] tracking-[.2px]">Atlas Extraction</h1>
-				<p class="mt-1 mb-0 opacity-85 text-[14px] leading-snug">Vente de ressources et matériaux de constructions<br>Système de devis & Logistique — 2 Impasse de Brunehilde, Traumheim</p>
-			</div>
+			<button id="dark-mode-toggle" class="bg-white/15 hover:bg-white/25 text-white p-3 rounded-xl transition cursor-pointer flex items-center justify-center w-11 h-11 flex-shrink-0" title="Activer le mode sombre">
+				🌙
+			</button>
 		</div>
 	</header>
 
 	<div class="max-w-[1180px] mx-auto my-[30px] px-[18px] grid gap-6 grid-cols-1 lg:grid-cols-[2fr_1fr]">
 		<div class="main">
-			<div class="bg-white rounded-2xl p-6 shadow-atlas mb-6">
-				<h2 class="mt-0 text-[18px] border-b-2 border-atlas-line pb-3 mb-5 text-atlas-green">Informations Client</h2>
+			<div class="bg-white dark:bg-zinc-900 rounded-2xl p-6 shadow-atlas dark:shadow-none dark:border dark:border-zinc-800 mb-6 transition-colors">
+				<h2 class="mt-0 text-[18px] border-b-2 border-atlas-line dark:border-zinc-800 pb-3 mb-5 text-atlas-green dark:text-atlas-light">Informations Client</h2>
 				<div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
 					<div class="mb-4">
-						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Client / Entreprise</label>
-						<input type="text" id="client" placeholder="Nom du client" class="w-11/12 px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
+						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted dark:text-zinc-400">Client / Entreprise</label>
+						<input type="text" id="client" placeholder="Nom du client" class="w-11/12 px-3.5 py-2.5 border border-atlas-line dark:border-zinc-700 bg-transparent dark:bg-zinc-800 dark:text-white rounded-lg text-[15px] outline-none focus:border-atlas-green">
 					</div>
 					<div class="mb-4">
-						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Projet / Chantier</label>
-						<input type="text" id="project" placeholder="Ex: Construction Mairie" class="w-11/12 px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
+						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted dark:text-zinc-400">Projet / Chantier</label>
+						<input type="text" id="project" placeholder="Ex: Construction Mairie" class="w-11/12 px-3.5 py-2.5 border border-atlas-line dark:border-zinc-700 bg-transparent dark:bg-zinc-800 dark:text-white rounded-lg text-[15px] outline-none focus:border-atlas-green">
 					</div>
 				</div>
 				<div class="mb-4">
-					<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Adresse de livraison</label>
-					<input type="text" id="note" placeholder="Coordonnées, rue, ville, accès spécifique..." class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
+					<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted dark:text-zinc-400">Adresse de livraison</label>
+					<input type="text" id="note" placeholder="Coordonnées, rue, ville, accès spécifique..." class="w-full px-3.5 py-2.5 border border-atlas-line dark:border-zinc-700 bg-transparent dark:bg-zinc-800 dark:text-white rounded-lg text-[15px] outline-none focus:border-atlas-green">
 				</div>
 			</div>
 
-			<div class="bg-white rounded-2xl p-6 shadow-atlas mb-6">
-				<h2 class="mt-0 text-[18px] border-b-2 border-atlas-line pb-3 mb-5 text-atlas-green">Matériaux & Ressources</h2>
+			<div class="bg-white dark:bg-zinc-900 rounded-2xl p-6 shadow-atlas dark:shadow-none dark:border dark:border-zinc-800 mb-6 transition-colors">
+				<h2 class="mt-0 text-[18px] border-b-2 border-atlas-line dark:border-zinc-800 pb-3 mb-5 text-atlas-green dark:text-atlas-light">Matériaux & Ressources</h2>
 				<div id="rows-container"></div>
-				<button id="add-row-btn" class="bg-atlas-light text-atlas-ink border-none px-4 py-2.5 rounded-lg cursor-pointer font-semibold w-full mt-2.5 hover:bg-atlas-mid hover:text-white transition">+ Ajouter une ressource</button>
+				<button id="add-row-btn" class="bg-atlas-light dark:bg-zinc-800 dark:text-atlas-light text-atlas-ink border-none px-4 py-2.5 rounded-lg cursor-pointer font-semibold w-full mt-2.5 hover:bg-atlas-mid hover:text-white dark:hover:bg-zinc-700 transition">+ Ajouter une ressource</button>
 			</div>
 		</div>
 
 		<div class="sidebar">
-			<div class="bg-white rounded-2xl p-6 shadow-atlas mb-6">
-				<h2 class="mt-0 text-[18px] border-b-2 border-atlas-line pb-3 mb-5 text-atlas-green">Service & Logistique</h2>
+			<div class="bg-white dark:bg-zinc-900 rounded-2xl p-6 shadow-atlas dark:shadow-none dark:border dark:border-zinc-800 mb-6 transition-colors">
+				<h2 class="mt-0 text-[18px] border-b-2 border-atlas-line dark:border-zinc-800 pb-3 mb-5 text-atlas-green dark:text-atlas-light">Service & Logistique</h2>
 
 				<div class="flex flex-col gap-2.5">
-					<label class="flex items-center gap-2.5 p-3 border border-atlas-line rounded-lg cursor-pointer transition hover:border-atlas-light">
+					<label class="flex items-center gap-2.5 p-3 border border-atlas-line dark:border-zinc-700 rounded-lg cursor-pointer transition hover:border-atlas-light">
 						<input type="radio" name="service" value="livraison" checked class="accent-atlas-green scale-125"> <b>Livraison</b> (Shulkers obligatoires)
 					</label>
-					<label class="flex items-center gap-2.5 p-3 border border-atlas-line rounded-lg cursor-pointer transition hover:border-atlas-light">
+					<label class="flex items-center gap-2.5 p-3 border border-atlas-line dark:border-zinc-700 rounded-lg cursor-pointer transition hover:border-atlas-light">
 						<input type="radio" name="service" value="depot" class="accent-atlas-green scale-125"> <b>Dépôt à Traumheim</b>
 					</label>
-					<label class="flex items-center gap-2.5 p-3 border border-atlas-line rounded-lg cursor-pointer transition hover:border-atlas-light">
+					<label class="flex items-center gap-2.5 p-3 border border-atlas-line dark:border-zinc-700 rounded-lg cursor-pointer transition hover:border-atlas-light">
 						<input type="radio" name="service" value="location" class="accent-atlas-green scale-125"> <b>Location Shulkers seule</b>
 					</label>
 				</div>
 
-				<div class="bg-[#f9fbf8] border border-atlas-line p-4 rounded-lg mt-4">
+				<div class="bg-[#f9fbf8] dark:bg-zinc-800/50 border border-atlas-line dark:border-zinc-700 p-4 rounded-lg mt-4 transition-colors">
 					<div class="mb-4 hidden" id="depot-shulker-container">
-						<label class="flex items-center gap-2 text-[13px] font-semibold text-atlas-muted cursor-pointer">
+						<label class="flex items-center gap-2 text-[13px] font-semibold text-atlas-muted dark:text-zinc-400 cursor-pointer">
 							<input type="checkbox" id="use-shulkers" class="accent-atlas-green"> Emballer dans des Shulkers louées
 						</label>
 					</div>
 					<div class="mb-4">
-						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Durée de location (mois)</label>
-						<input type="number" id="months" value="1" min="1" class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
+						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted dark:text-zinc-400">Durée de location (mois)</label>
+						<input type="number" id="months" value="1" min="1" class="w-full px-3.5 py-2.5 border border-atlas-line dark:border-zinc-700 bg-transparent dark:bg-zinc-800 dark:text-white rounded-lg text-[15px] outline-none focus:border-atlas-green">
 					</div>
 					<div class="mb-4">
-						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Shulkers estimées (auto)</label>
-						<input type="number" id="shulker-est" disabled class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] bg-[#eef1ec]">
+						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted dark:text-zinc-400">Shulkers estimées (auto)</label>
+						<input type="number" id="shulker-est" disabled class="w-full px-3.5 py-2.5 border border-atlas-line dark:border-zinc-700 rounded-lg text-[15px] bg-[#eef1ec] dark:bg-zinc-800 dark:text-zinc-400">
 					</div>
 					<div class="mb-4">
-						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Forcer le nombre de Shulkers</label>
-						<input type="number" id="shulker-force" placeholder="Auto" min="0" class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
+						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted dark:text-zinc-400">Forcer le nombre de Shulkers</label>
+						<input type="number" id="shulker-force" placeholder="Auto" min="0" class="w-full px-3.5 py-2.5 border border-atlas-line dark:border-zinc-700 bg-transparent dark:bg-zinc-800 dark:text-white rounded-lg text-[15px] outline-none focus:border-atlas-green">
 					</div>
 				</div>
 			</div>
 
-			<div class="bg-white rounded-2xl p-6 shadow-atlas mb-6">
-				<h2 class="mt-0 text-[18px] border-b-2 border-atlas-line pb-3 mb-5 text-atlas-green">Résumé financier</h2>
+			<div class="bg-white dark:bg-zinc-900 rounded-2xl p-6 shadow-atlas dark:shadow-none dark:border dark:border-zinc-800 mb-6 transition-colors">
+				<h2 class="mt-0 text-[18px] border-b-2 border-atlas-line dark:border-zinc-800 pb-3 mb-5 text-atlas-green dark:text-atlas-light">Résumé financier</h2>
 				<div class="flex justify-between mb-3 text-[15px]"><span>Matériaux HT</span><span id="total-mat">0.00 €</span></div>
 				<div class="flex justify-between mb-3 text-[15px]"><span>Frais de livraison</span><span id="sum-del">15.00 €</span></div>
 				<div class="flex justify-between mb-3 text-[15px]"><span>Location Shulkers</span><span id="sum-rent">0.00 €</span></div>
 				<div class="flex justify-between mb-3 text-[15px]"><span>Taxes fixes (8,7%)</span><span id="sum-tax">0.00 €</span></div>
 				<div class="flex justify-between mb-3 text-[15px]"><span>Caution Shulkers</span><span id="sum-dep">0.00 €</span></div>
-				<div class="flex justify-between mb-3 text-[20px] font-extrabold text-atlas-green border-t-2 border-atlas-line pt-4 mt-4">
+				<div class="flex justify-between mb-3 text-[20px] font-extrabold text-atlas-green dark:text-atlas-light border-t-2 border-atlas-line dark:border-zinc-800 pt-4 mt-4">
 					<span>TOTAL À PAYER</span><span id="total-final">0.00 €</span>
 				</div>
 				<button id="copy-btn" class="bg-atlas-green text-white border-none py-3.5 px-4 rounded-lg cursor-pointer font-bold text-[16px] w-full mt-5 transition hover:bg-[#2c6e2b]">Copier le Devis</button>
@@ -138,6 +144,7 @@
 			}
 			addRow();
 			setupListeners();
+			setupDarkMode();
 		}
 
 		function formatMoney(val) {
@@ -157,10 +164,10 @@
 			});
 
 			rowDiv.innerHTML = `
-				<select class="item-select p-2.5 border border-atlas-line rounded-lg text-[14px] outline-none focus:border-atlas-green bg-white">${optionsHtml}</select>
-				<input type="number" min="1" value="1" class="item-qty p-2.5 border border-atlas-line rounded-lg text-[14px] outline-none focus:border-atlas-green">
-				<input type="text" value="0.00 €" disabled class="item-price p-2.5 border border-atlas-line rounded-lg text-[14px] bg-[#eef1ec]">
-				<button class="remove-row-btn bg-[#ffebe9] text-[#da3633] border-none w-[38px] h-[38px] rounded-lg cursor-pointer font-bold hover:bg-[#ffdce0]">X</button>
+				<select class="item-select p-2.5 border border-atlas-line dark:border-zinc-700 rounded-lg text-[14px] outline-none focus:border-atlas-green bg-white dark:bg-zinc-800 dark:text-white">${optionsHtml}</select>
+				<input type="number" min="1" value="1" class="item-qty p-2.5 border border-atlas-line dark:border-zinc-700 rounded-lg text-[14px] outline-none focus:border-atlas-green bg-transparent dark:bg-zinc-800 dark:text-white">
+				<input type="text" value="0.00 €" disabled class="item-price p-2.5 border border-atlas-line dark:border-zinc-700 rounded-lg text-[14px] bg-[#eef1ec] dark:bg-zinc-800 dark:text-zinc-400">
+				<button class="remove-row-btn bg-[#ffebe9] dark:bg-red-950/50 text-[#da3633] dark:text-red-400 border-none w-[38px] h-[38px] rounded-lg cursor-pointer font-bold hover:bg-[#ffdce0] dark:hover:bg-red-900/50">X</button>
 			`;
 
 			rowDiv.querySelector('.remove-row-btn').addEventListener('click', () => {
@@ -174,6 +181,32 @@
 
 			container.appendChild(rowDiv);
 			calculateTotals();
+		}
+
+		function setupDarkMode() {
+			const toggleBtn = document.getElementById('dark-mode-toggle');
+			const htmlEl = document.documentElement;
+
+			// Check saved preference or system preference
+			if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+				htmlEl.classList.add('dark');
+				toggleBtn.textContent = '☀️';
+			} else {
+				htmlEl.classList.remove('dark');
+				toggleBtn.textContent = '🌙';
+			}
+
+			toggleBtn.addEventListener('click', () => {
+				if (htmlEl.classList.contains('dark')) {
+					htmlEl.classList.remove('dark');
+					localStorage.setItem('theme', 'light');
+					toggleBtn.textContent = '🌙';
+				} else {
+					htmlEl.classList.add('dark');
+					localStorage.setItem('theme', 'dark');
+					toggleBtn.textContent = '☀️';
+				}
+			});
 		}
 
 		function setupListeners() {
