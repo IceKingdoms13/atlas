@@ -30,10 +30,9 @@
 			}
 		}
 	</script>
-	<script src="https://unpkg.com/petite-vue@0.4.1/dist/petite-vue.iife.js" defer init></script>
 </head>
 
-<body class="bg-atlas-bg text-atlas-ink font-sans pb-[50px] m-0 min-h-screen" v-scope="app()">
+<body class="bg-atlas-bg text-atlas-ink font-sans pb-[50px] m-0 min-h-screen">
 
 	<header class="bg-gradient-to-br from-atlas-green to-[#4d9e42] text-white">
 		<div class="max-w-[1180px] mx-auto px-[18px] py-[22px] flex items-center gap-[18px]">
@@ -54,37 +53,23 @@
 				<div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
 					<div class="mb-4">
 						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Client / Entreprise</label>
-						<input type="text" v-model="client" placeholder="Nom du client" class="w-11/12 px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
+						<input type="text" id="client" placeholder="Nom du client" class="w-11/12 px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
 					</div>
 					<div class="mb-4">
 						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Projet / Chantier</label>
-						<input type="text" v-model="project" placeholder="Ex: Construction Mairie" class="w-11/12 px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
+						<input type="text" id="project" placeholder="Ex: Construction Mairie" class="w-11/12 px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
 					</div>
 				</div>
 				<div class="mb-4">
 					<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Adresse de livraison</label>
-					<input type="text" v-model="note" placeholder="Coordonnées, rue, ville, accès spécifique..." class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
+					<input type="text" id="note" placeholder="Coordonnées, rue, ville, accès spécifique..." class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
 				</div>
 			</div>
 
 			<div class="bg-white rounded-2xl p-6 shadow-atlas mb-6">
 				<h2 class="mt-0 text-[18px] border-b-2 border-atlas-line pb-3 mb-5 text-atlas-green">Matériaux & Ressources</h2>
-
-				<div>
-					<div v-for="(row, index) in rows" :key="index" class="grid grid-cols-2 sm:grid-cols-[3fr_1fr_1fr_auto] gap-2.5 mb-2.5 items-center">
-						<select v-model="row.name" class="p-2.5 border border-atlas-line rounded-lg text-[14px] outline-none focus:border-atlas-green bg-white">
-							<option value="" disabled>Choisir un matériau...</option>
-							<option v-for="item in sortedItems" :key="item.name" :value="item.name">
-								{{ item.name }} ({{ item.minPrice }} €)
-							</option>
-						</select>
-						<input type="number" min="1" v-model.number="row.qty" placeholder="Qté" class="p-2.5 border border-atlas-line rounded-lg text-[14px] outline-none focus:border-atlas-green">
-						<input type="text" :value="getRowPrice(row)" disabled class="p-2.5 border border-atlas-line rounded-lg text-[14px] bg-[#eef1ec]">
-						<button class="bg-[#ffebe9] text-[#da3633] border-none w-[38px] h-[38px] rounded-lg cursor-pointer font-bold hover:bg-[#ffdce0] transition" @click="removeRow(index)">X</button>
-					</div>
-				</div>
-
-				<button class="bg-atlas-light text-atlas-ink border-none px-4 py-2.5 rounded-lg cursor-pointer font-semibold w-full mt-2.5 hover:bg-atlas-mid hover:text-white transition" @click="addRow">+ Ajouter une ressource</button>
+				<div id="rows-container"></div>
+				<button id="add-row-btn" class="bg-atlas-light text-atlas-ink border-none px-4 py-2.5 rounded-lg cursor-pointer font-semibold w-full mt-2.5 hover:bg-atlas-mid hover:text-white transition">+ Ajouter une ressource</button>
 			</div>
 		</div>
 
@@ -94,173 +79,180 @@
 
 				<div class="flex flex-col gap-2.5">
 					<label class="flex items-center gap-2.5 p-3 border border-atlas-line rounded-lg cursor-pointer transition hover:border-atlas-light">
-						<input type="radio" name="service" value="livraison" v-model="service" class="accent-atlas-green scale-125"> <b>Livraison</b> (Shulkers obligatoires)
+						<input type="radio" name="service" value="livraison" checked class="accent-atlas-green scale-125"> <b>Livraison</b> (Shulkers obligatoires)
 					</label>
 					<label class="flex items-center gap-2.5 p-3 border border-atlas-line rounded-lg cursor-pointer transition hover:border-atlas-light">
-						<input type="radio" name="service" value="depot" v-model="service" class="accent-atlas-green scale-125"> <b>Dépôt à Traumheim</b>
+						<input type="radio" name="service" value="depot" class="accent-atlas-green scale-125"> <b>Dépôt à Traumheim</b>
 					</label>
 					<label class="flex items-center gap-2.5 p-3 border border-atlas-line rounded-lg cursor-pointer transition hover:border-atlas-light">
-						<input type="radio" name="service" value="location" v-model="service" class="accent-atlas-green scale-125"> <b>Location Shulkers seule</b>
+						<input type="radio" name="service" value="location" class="accent-atlas-green scale-125"> <b>Location Shulkers seule</b>
 					</label>
 				</div>
 
 				<div class="bg-[#f9fbf8] border border-atlas-line p-4 rounded-lg mt-4">
-					<div class="mb-4" v-show="service === 'depot'">
+					<div class="mb-4 hidden" id="depot-shulker-container">
 						<label class="flex items-center gap-2 text-[13px] font-semibold text-atlas-muted cursor-pointer">
-							<input type="checkbox" v-model="useShulkers" class="accent-atlas-green"> Emballer dans des Shulkers louées
+							<input type="checkbox" id="use-shulkers" class="accent-atlas-green"> Emballer dans des Shulkers louées
 						</label>
 					</div>
-
 					<div class="mb-4">
 						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Durée de location (mois)</label>
-						<input type="number" v-model.number="months" min="1" class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
+						<input type="number" id="months" value="1" min="1" class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
 					</div>
-
 					<div class="mb-4">
 						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Shulkers estimées (auto)</label>
-						<input type="number" :value="shulkerEst" disabled class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] bg-[#eef1ec]">
+						<input type="number" id="shulker-est" disabled class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] bg-[#eef1ec]">
 					</div>
-
 					<div class="mb-4">
 						<label class="block text-[13px] font-semibold mb-1.5 text-atlas-muted">Forcer le nombre de Shulkers</label>
-						<input type="number" v-model.number="shulkerForce" placeholder="Auto" min="0" class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
+						<input type="number" id="shulker-force" placeholder="Auto" min="0" class="w-full px-3.5 py-2.5 border border-atlas-line rounded-lg text-[15px] outline-none focus:border-atlas-green">
 					</div>
 				</div>
 			</div>
 
 			<div class="bg-white rounded-2xl p-6 shadow-atlas mb-6">
 				<h2 class="mt-0 text-[18px] border-b-2 border-atlas-line pb-3 mb-5 text-atlas-green">Résumé financier</h2>
-				<div class="flex justify-between mb-3 text-[15px]"><span>Matériaux HT</span><span>{{ formatMoney(totalMat) }}</span></div>
-				<div class="flex justify-between mb-3 text-[15px]"><span>Frais de livraison</span><span>{{ formatMoney(sumDel) }}</span></div>
-				<div class="flex justify-between mb-3 text-[15px]"><span>Location Shulkers</span><span>{{ formatMoney(sumRent) }}</span></div>
-				<div class="flex justify-between mb-3 text-[15px]"><span>Taxes fixes (8,7%)</span><span>{{ formatMoney(sumTax) }}</span></div>
-				<div class="flex justify-between mb-3 text-[15px]"><span>Caution Shulkers</span><span>{{ formatMoney(sumDep) }}</span></div>
+				<div class="flex justify-between mb-3 text-[15px]"><span>Matériaux HT</span><span id="total-mat">0.00 €</span></div>
+				<div class="flex justify-between mb-3 text-[15px]"><span>Frais de livraison</span><span id="sum-del">15.00 €</span></div>
+				<div class="flex justify-between mb-3 text-[15px]"><span>Location Shulkers</span><span id="sum-rent">0.00 €</span></div>
+				<div class="flex justify-between mb-3 text-[15px]"><span>Taxes fixes (8,7%)</span><span id="sum-tax">0.00 €</span></div>
+				<div class="flex justify-between mb-3 text-[15px]"><span>Caution Shulkers</span><span id="sum-dep">0.00 €</span></div>
 				<div class="flex justify-between mb-3 text-[20px] font-extrabold text-atlas-green border-t-2 border-atlas-line pt-4 mt-4">
-					<span>TOTAL À PAYER</span><span>{{ formatMoney(total) }}</span>
+					<span>TOTAL À PAYER</span><span id="total-final">0.00 €</span>
 				</div>
-				<button class="bg-atlas-green text-white border-none py-3.5 px-4 rounded-lg cursor-pointer font-bold text-[16px] w-full mt-5 transition hover:bg-[#2c6e2b]" @click="copyRequest">Copier le Devis</button>
+				<button id="copy-btn" class="bg-atlas-green text-white border-none py-3.5 px-4 rounded-lg cursor-pointer font-bold text-[16px] w-full mt-5 transition hover:bg-[#2c6e2b]">Copier le Devis</button>
 			</div>
 		</div>
 	</div>
 
 	<script>
-		function app() {
-			return {
-				client: '',
-				project: '',
-				note: '',
-				service: 'livraison',
-				useShulkers: false,
-				months: 1,
-				shulkerForce: '',
-				items: [],
-				rows: [{ name: '', qty: 1 }],
+		let itemsCatalog = [];
 
-				async loadItems() {
-					try {
-						const response = await fetch('./economie_items.json');
-						if (!response.ok) throw new Error('Erreur réseau');
-						this.items = await response.json();
-					} catch (error) {
-						console.error(error);
-					}
-				},
-
-				get sortedItems() {
-					return [...this.items]
-						.filter(item => item.minPrice > 0)
-						.sort((a, b) => a.name.localeCompare(b.name));
-				},
-
-				getItemData(name) {
-					if (!name) return null;
-					return this.items.find(i => i.name.toLowerCase() === name.trim().toLowerCase());
-				},
-
-				getRowPrice(row) {
-					const item = this.getItemData(row.name);
-					if (!item) return '0.00 €';
-					return ((item.minPrice || 0) * (row.qty || 0)).toFixed(2) + ' €';
-				},
-
-				addRow() {
-					this.rows.push({ name: '', qty: 1 });
-				},
-
-				removeRow(index) {
-					this.rows.splice(index, 1);
-					if (this.rows.length === 0) this.addRow();
-				},
-
-				get totalMat() {
-					if (this.service === 'location') return 0;
-					return this.rows.reduce((sum, row) => {
-						const item = this.getItemData(row.name);
-						return sum + (item ? (item.minPrice || 0) * (row.qty || 0) : 0);
-					}, 0);
-				},
-
-				get totalSlots() {
-					return this.rows.reduce((slots, row) => {
-						const item = this.getItemData(row.name);
-						if (!item) return slots;
-						return slots + Math.ceil((row.qty || 0) / (item.max_stack || 64));
-					}, 0);
-				},
-
-				get shulkerEst() {
-					if ((this.service === 'livraison' || (this.service === 'depot' && this.useShulkers)) && this.totalSlots > 0) {
-						return Math.ceil(this.totalSlots / 27);
-					}
-					return 0;
-				},
-
-				get finalShulkers() {
-					if (this.shulkerForce !== '' && !isNaN(this.shulkerForce)) {
-						return Math.max(0, parseInt(this.shulkerForce));
-					}
-					return this.shulkerEst;
-				},
-
-				get sumDel() {
-					return this.service === 'livraison' ? 15.00 : 0;
-				},
-
-				get sumRent() {
-					return this.finalShulkers * 20.00 * Math.max(1, this.months);
-				},
-
-				get sumDep() {
-					return this.finalShulkers * 55.00;
-				},
-
-				get subtotal() {
-					return this.totalMat + this.sumDel + this.sumRent;
-				},
-
-				get sumTax() {
-					return this.subtotal * 0.087;
-				},
-
-				get total() {
-					return this.subtotal + this.sumTax + this.sumDep;
-				},
-
-				formatMoney(val) {
-					return (val || 0).toFixed(2) + ' €';
-				},
-
-				copyRequest() {
-					let itemsText = this.rows.filter(r => r.name.trim()).map(r => `- ${r.qty}x ${r.name}`).join('\n');
-					let text = `*** Devis Atlas Extraction ***\n\nClient : ${this.client || 'Non renseigné'}\nProjet : ${this.project || 'Non renseigné'}\n\nRessources demandées :\n${itemsText || 'Aucune'}\n\nTotal estimé : ${this.formatMoney(this.total)}`;
-					navigator.clipboard.writeText(text).then(() => alert('Devis copié !'));
-				},
-
-				init() {
-					this.loadItems();
-				}
+		async function init() {
+			try {
+				const response = await fetch('./economie_items.json');
+				itemsCatalog = await response.json();
+				itemsCatalog.sort((a, b) => a.name.localeCompare(b.name));
+			} catch (e) {
+				console.error("Erreur de chargement catalogue", e);
 			}
+			addRow();
+			setupListeners();
 		}
+
+		function formatMoney(val) {
+			return (val || 0).toFixed(2) + ' €';
+		}
+
+		function addRow() {
+			const container = document.getElementById('rows-container');
+			const rowDiv = document.createElement('div');
+			rowDiv.className = 'grid grid-cols-2 sm:grid-cols-[3fr_1fr_1fr_auto] gap-2.5 mb-2.5 items-center row-item';
+			
+			let optionsHtml = '<option value="" disabled selected>Choisir un matériau...</option>';
+			itemsCatalog.forEach(item => {
+				if(item.minPrice > 0) {
+					optionsHtml += `<option value="${item.name}">${item.name} (${item.minPrice} €)</option>`;
+				}
+			});
+
+			rowDiv.innerHTML = `
+				<select class="item-select p-2.5 border border-atlas-line rounded-lg text-[14px] outline-none focus:border-atlas-green bg-white">${optionsHtml}</select>
+				<input type="number" min="1" value="1" class="item-qty p-2.5 border border-atlas-line rounded-lg text-[14px] outline-none focus:border-atlas-green">
+				<input type="text" value="0.00 €" disabled class="item-price p-2.5 border border-atlas-line rounded-lg text-[14px] bg-[#eef1ec]">
+				<button class="remove-row-btn bg-[#ffebe9] text-[#da3633] border-none w-[38px] h-[38px] rounded-lg cursor-pointer font-bold hover:bg-[#ffdce0]">X</button>
+			`;
+
+			rowDiv.querySelector('.remove-row-btn').addEventListener('click', () => {
+				rowDiv.remove();
+				if(document.querySelectorAll('.row-item').length === 0) addRow();
+				calculateTotals();
+			});
+
+			rowDiv.querySelector('.item-select').addEventListener('change', calculateTotals);
+			rowDiv.querySelector('.item-qty').addEventListener('input', calculateTotals);
+
+			container.appendChild(rowDiv);
+			calculateTotals();
+		}
+
+		function setupListeners() {
+			document.getElementById('add-row-btn').addEventListener('click', addRow);
+			document.querySelectorAll('input[name="service"]').forEach(el => {
+				el.addEventListener('change', (e) => {
+					const depotContainer = document.getElementById('depot-shulker-container');
+					depotContainer.classList.toggle('hidden', e.target.value !== 'depot');
+					calculateTotals();
+				});
+			});
+			document.getElementById('use-shulkers').addEventListener('change', calculateTotals);
+			document.getElementById('months').addEventListener('input', calculateTotals);
+			document.getElementById('shulker-force').addEventListener('input', calculateTotals);
+			document.getElementById('copy-btn').addEventListener('click', copyDevis);
+		}
+
+		function calculateTotals() {
+			const service = document.querySelector('input[name="service"]:checked').value;
+			const useShulkers = document.getElementById('use-shulkers').checked;
+			const months = parseInt(document.getElementById('months').value) || 1;
+			const shulkerForce = document.getElementById('shulker-force').value;
+
+			let totalMat = 0;
+			let totalSlots = 0;
+
+			document.querySelectorAll('.row-item').forEach(row => {
+				const selectName = row.querySelector('.item-select').value;
+				const qty = parseFloat(row.querySelector('.item-qty').value) || 0;
+				const itemData = itemsCatalog.find(i => i.name === selectName);
+
+				if(itemData && service !== 'location') {
+					const linePrice = (itemData.minPrice || 0) * qty;
+					totalMat += linePrice;
+					row.querySelector('.item-price').value = formatMoney(linePrice);
+
+					const maxStack = itemData.max_stack || 64;
+					totalSlots += Math.ceil(qty / maxStack);
+				} else {
+					row.querySelector('.item-price').value = '0.00 €';
+				}
+			});
+
+			let shulkerEst = 0;
+			if(service === 'livraison' || (service === 'depot' && useShulkers)) {
+				shulkerEst = totalSlots > 0 ? Math.ceil(totalSlots / 27) : 0;
+			}
+			document.getElementById('shulker-est').value = shulkerEst;
+
+			let finalShulkers = shulkerEst;
+			if(shulkerForce !== '' && !isNaN(shulkerForce)) {
+				finalShulkers = Math.max(0, parseInt(shulkerForce));
+			}
+
+			const sumDel = service === 'livraison' ? 15.00 : 0;
+			const sumRent = finalShulkers * 20.00 * Math.max(1, months);
+			const sumDep = finalShulkers * 55.00;
+			const subtotal = totalMat + sumDel + sumRent;
+			const sumTax = subtotal * 0.087;
+			const total = subtotal + sumTax + sumDep;
+
+			document.getElementById('total-mat').textContent = formatMoney(totalMat);
+			document.getElementById('sum-del').textContent = formatMoney(sumDel);
+			document.getElementById('sum-rent').textContent = formatMoney(sumRent);
+			document.getElementById('sum-tax').textContent = formatMoney(sumTax);
+			document.getElementById('sum-dep').textContent = formatMoney(sumDep);
+			document.getElementById('total-final').textContent = formatMoney(total);
+		}
+
+		function copyDevis() {
+			const client = document.getElementById('client').value || 'Non renseigné';
+			const project = document.getElementById('project').value || 'Non renseigné';
+			const totalFinal = document.getElementById('total-final').textContent;
+
+			let text = `*** Devis Atlas Extraction ***\n\nClient : ${client}\nProjet : ${project}\n\nTotal estimé : ${totalFinal}`;
+			navigator.clipboard.writeText(text).then(() => alert('Devis copié dans le presse-papier !'));
+		}
+
+		window.addEventListener('DOMContentLoaded', init);
 	</script>
 </body>
 
