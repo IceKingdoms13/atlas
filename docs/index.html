@@ -135,10 +135,10 @@
 
 			<div class="bg-white dark:bg-zinc-900 rounded-2xl p-6 shadow-atlas dark:shadow-none dark:border dark:border-zinc-800 mb-6 transition-colors">
 				<h2 class="mt-0 text-[18px] border-b-2 border-atlas-line dark:border-zinc-800 pb-3 mb-5 text-atlas-green dark:text-atlas-light">Résumé financier</h2>
-				<div class="flex justify-between mb-3 text-[15px]"><span>Matériaux HT</span><span id="total-mat">0.00 €</span></div>
+				<div class="flex justify-between mb-3 text-[15px]"><span>Matériaux </span><span id="total-mat">0.00 €</span></div>
+				<div class="flex justify-between mb-3 text-[15px]"><span>Dont taxes fixes (8,7%)</span><span id="sum-tax">0.00 €</span></div>
 				<div class="flex justify-between mb-3 text-[15px]"><span>Frais de livraison</span><span id="sum-del">15.00 €</span></div>
 				<div class="flex justify-between mb-3 text-[15px]"><span>Location Shulkers</span><span id="sum-rent">0.00 €</span></div>
-				<div class="flex justify-between mb-3 text-[15px]"><span>Taxes fixes (8,7%)</span><span id="sum-tax">0.00 €</span></div>
 				<div class="flex justify-between mb-3 text-[15px]"><span>Caution Shulkers</span><span id="sum-dep">0.00 €</span></div>
 				<div class="flex justify-between mb-3 text-[20px] font-extrabold text-atlas-green dark:text-atlas-light border-t-2 border-atlas-line dark:border-zinc-800 pt-4 mt-4">
 					<span>TOTAL À PAYER</span><span id="total-final">0.00 €</span>
@@ -402,7 +402,7 @@
 
 			const subtotal = totalMat + sumDel + sumRent;
 			let sumTax = subtotal * 0.087;
-			let total = subtotal + sumTax + sumDep;
+			let total = subtotal + sumDep;
 
 			document.getElementById('total-mat').textContent = formatMoney(totalMat);
 			document.getElementById('sum-del').textContent = formatMoney(sumDel);
@@ -438,10 +438,10 @@
 				`Ressources demandées :\n` +
 				`${itemsText || 'Aucune (Location seule)'}\n\n` +
 				`Résumé financier :\n` +
-				`Matériaux (HT) : ${totalMat}\n` +
+				`Matériaux : ${totalMat}\n` +
+				`Dont taxes : ${sumTax}\n` +
 				`Frais de Livraison : ${sumDel}\n` +
 				`Location : ${sumRent}\n` +
-				`Taxes : ${sumTax}\n` +
 				`Caution : ${sumDep}\n\n` +
 				`Total estimé (TTC + Caution) : ${total}\n` +
 				`Dont ${sumDep} restituable`;
